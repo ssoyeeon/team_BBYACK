@@ -27,31 +27,37 @@ public class MovePlayer : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody>().AddForce(Vector3.up * Force);
-            GetComponent<Rigidbody>().AddForce(Vector3.left * Force1);
+            _Rigidbody.velocity = Vector3.zero;
+            _Rigidbody.AddForce(Vector3.up * Force * Time.deltaTime, ForceMode.Impulse);
+            _Rigidbody.AddForce(Vector3.left * Force1 * Time.deltaTime, ForceMode.Impulse);
 
-            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            targetPosition.z = 0;
-            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
-            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
-            targetPosition.z = Mathf.Clamp(targetPosition.z, minPosition.z, maxPosition.z);
+            //this.gameObject.transform.position += new Vector3(Force, Force, 0.0f);
 
-            transform.position = targetPosition;
+            //Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //targetPosition.z = 0;
+            //targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
+            //targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
+            //targetPosition.z = Mathf.Clamp(targetPosition.z, minPosition.z, maxPosition.z);
+
+            //transform.position = targetPosition;
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            _Rigidbody.AddForce(transform.up * Force);
-            _Rigidbody.AddForce(transform.right * Force1);
+            _Rigidbody.velocity = Vector3.zero;
+            _Rigidbody.AddForce(Vector3.up * Force * Time.deltaTime, ForceMode.Impulse);
+            _Rigidbody.AddForce(Vector3.right * Force1 * Time.deltaTime, ForceMode.Impulse);
 
-            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            targetPosition.z = 0;
-            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
-            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
-            targetPosition.z = Mathf.Clamp(targetPosition.z, minPosition.z, maxPosition.z);
+            //this.gameObject.transform.position += new Vector3(-Force, Force, 0.0f);
 
-            transform.position = targetPosition;
-            
+            //Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //targetPosition.z = 0;
+            //targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
+            //targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
+            //targetPosition.z = Mathf.Clamp(targetPosition.z, minPosition.z, maxPosition.z);
+
+            //transform.position = targetPosition;
+
         }
 
         Vector3 clasmpedPosition = transform.position;
