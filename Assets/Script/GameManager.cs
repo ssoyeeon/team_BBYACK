@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Scene : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public float Force = 0f;
+    public float checkTime = 0;
+    public Text point;
+
     // Start is called before the first frame update
     void Start()
     {

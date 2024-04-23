@@ -567,14 +567,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Rigidbody: {fileID: 549286751}
-  Force: 12
+  Force: 22
   Force1: 4
   moveSpeed: 0
   moveSpeed1: 5
   StartTime: 3
   startFont: {fileID: 1680898174}
   minPosition: {x: -15, y: -10, z: -15}
-  maxPosition: {x: 15, y: 100, z: 15}
+  maxPosition: {x: 15, y: 9999, z: 15}
   originalPosition: {x: 0, y: 0, z: 0}
 --- !u!65 &549286747
 BoxCollider:
@@ -846,7 +846,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:

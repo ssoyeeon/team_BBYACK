@@ -24,6 +24,7 @@ public class MovePlayer : MonoBehaviour
     void Start()
     {
         _Rigidbody.velocity = Vector3.zero;
+        _Rigidbody.useGravity = false;
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class MovePlayer : MonoBehaviour
         {
             StartTime = 0;
             startFont.text = "";
+            _Rigidbody.useGravity = true;
 
             if (Input.GetMouseButtonDown(0))
             {
