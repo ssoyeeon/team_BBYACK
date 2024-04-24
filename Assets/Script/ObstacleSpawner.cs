@@ -8,8 +8,8 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private GameObject obstacleType001;
     [SerializeField] private GameObject obstacleType002;
 
-    [SerializeField] private float minXPosition = -5f;
-    [SerializeField] private float maxXPosition = 5f;
+    [SerializeField] public float minXPosition = -2f;
+    [SerializeField] public float maxXPosition = 2f;
     [SerializeField] private float lastObstaclePosition = 0;
 
     [SerializeField] private MovePlayer player;
@@ -26,7 +26,10 @@ public class ObstacleSpawner : MonoBehaviour
         {
             temp = GameObject.Instantiate<GameObject>(obstacleType002);
         }
-        temp.transform.position = new Vector3(Random.Range(maxXPosition, minXPosition), player.transform.position.y + 11, 0);
+
+        
+
+        temp.transform.position = new Vector3(Random.Range(maxXPosition, minXPosition), player.transform.position.y + 12, 0);
         var obstacle = temp.GetComponent<Obstacle>();
         obstacle.ObstacleNum = num;
         obstacle.Player = player;
