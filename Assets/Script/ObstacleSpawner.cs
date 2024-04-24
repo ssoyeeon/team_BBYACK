@@ -29,7 +29,7 @@ public class ObstacleSpawner : MonoBehaviour
 
         
 
-        temp.transform.position = new Vector3(Random.Range(maxXPosition, minXPosition), player.transform.position.y + 12, 0);
+        temp.transform.position = new Vector3(Random.Range(maxXPosition, minXPosition), player.transform.position.y + 13.0f, 0.0f);
         var obstacle = temp.GetComponent<Obstacle>();
         obstacle.ObstacleNum = num;
         obstacle.Player = player;
