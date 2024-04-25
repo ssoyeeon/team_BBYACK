@@ -82,14 +82,15 @@ public class MovePlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Boundary"))
-        {
-            canMove = false;
-        }
+        //if (collision.gameObject.CompareTag("Boundary"))
+        //{
+        //    canMove = false;
+        //}
 
         if (collision != null)
         {
-                _Rigidbody.velocity = Vector3.zero;
+            canMove = false;
+            _Rigidbody.velocity = Vector3.zero;
             rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
             {
                 
