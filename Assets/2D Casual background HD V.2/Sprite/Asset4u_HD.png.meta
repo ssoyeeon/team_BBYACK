@@ -725,27 +725,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asset4u_HD_25
-      rect:
-        serializedVersion: 2
-        x: 697
-        y: 635
-        width: 273
-        height: 359
-      alignment: 9
-      pivot: {x: 0.5, y: 0.022629932}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84305410000000000800000000000000
-      internalID: 21300040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Asset4u_HD_27
       rect:
         serializedVersion: 2
@@ -772,7 +751,7 @@ TextureImporter:
         serializedVersion: 2
         x: 473
         y: 645
-        width: 220
+        width: 266
         height: 257
       alignment: 9
       pivot: {x: 0.5433985, y: 0.03629288}
@@ -1085,13 +1064,13 @@ TextureImporter:
       name: Asset4u_HD_39
       rect:
         serializedVersion: 2
-        x: 987
-        y: 635
-        width: 478
+        x: 854
+        y: 650
+        width: 280
         height: 269
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 10, w: 72}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1187,34 +1166,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asset4u_HD_44
-      rect:
-        serializedVersion: 2
-        x: 842
-        y: 0
-        width: 208
-        height: 615
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87305410000000000800000000000000
-      internalID: 21300088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Asset4u_HD_45
       rect:
         serializedVersion: 2
         x: 631
-        y: 0
-        width: 208
-        height: 615
+        y: 404
+        width: 217
+        height: 211
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1232,10 +1190,10 @@ TextureImporter:
       name: Asset4u_HD_46
       rect:
         serializedVersion: 2
-        x: 422
-        y: 425
-        width: 208
-        height: 190
+        x: 413
+        y: 410
+        width: 218
+        height: 205
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,27 +1203,6 @@ TextureImporter:
       bones: []
       spriteID: c7305410000000000800000000000000
       internalID: 21300092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset4u_HD_47
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 0
-        width: 208
-        height: 621
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7305410000000000800000000000000
-      internalID: 21300094
       vertices: []
       indices: 
       edges: []
@@ -1334,22 +1271,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Asset4u_HD_0
+      name: Asset4u_HD_32
       rect:
         serializedVersion: 2
-        x: 420
-        y: 0
-        width: 206
-        height: 425
+        x: 1179
+        y: 643
+        width: 264
+        height: 219
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 5, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd6bd16636e73545bce4b24050ecb49
-      internalID: -768720638
+      spriteID: fa0ccf58ef95e5e468ec191ad1be70aa
+      internalID: -1879886482
       vertices: []
       indices: 
       edges: []
@@ -1391,6 +1328,7 @@ TextureImporter:
       Asset4u_HD_3: 21300006
       Asset4u_HD_30: 21300060
       Asset4u_HD_31: 21300062
+      Asset4u_HD_32: -1879886482
       Asset4u_HD_34: 21300068
       Asset4u_HD_35: 21300070
       Asset4u_HD_36: 21300072
