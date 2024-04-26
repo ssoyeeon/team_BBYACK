@@ -23,7 +23,7 @@ public class MovePlayer : MonoBehaviour
 
     public Vector3 minPosition = new Vector3(-15f, -10f, -15f);
     public Vector3 maxPosition = new Vector3(15f, 100f, 15f);
-    public Vector3 originalPosition = new Vector3(0f,0f,0f);
+    public Vector3 originalPosition = new Vector3(0f, 0f, 0f);
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +79,7 @@ public class MovePlayer : MonoBehaviour
 
 
     }
+
     private void OnCollisionEnter(Collision collision)
     {
 
