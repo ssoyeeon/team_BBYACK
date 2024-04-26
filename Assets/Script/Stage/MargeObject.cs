@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class MargeObject : MonoBehaviour
 {
-    public float checkTime = 0;
-    public Text point;
-
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.collider.tag == "Boundory")
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame

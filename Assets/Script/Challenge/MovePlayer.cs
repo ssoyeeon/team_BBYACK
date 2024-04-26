@@ -73,19 +73,14 @@ public class MovePlayer : MonoBehaviour
             if (transform.position != clasmpedPosition)
             {
                 gameObject.transform.position = new Vector3(0.0f, 1.0f, 0.0f);
-                SceneManager.LoadScene("GameOverScene");
+                SceneManager.LoadScene("C.GameOverScene");
             }
         }
 
 
     }
-
     private void OnCollisionEnter(Collision collision)
     {
-        //if (collision.gameObject.CompareTag("Boundary"))
-        //{
-        //    canMove = false;
-        //}
 
         if (collision != null)
         {
@@ -93,8 +88,8 @@ public class MovePlayer : MonoBehaviour
             _Rigidbody.velocity = Vector3.zero;
             rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
             {
-                
-                SceneManager.LoadScene("GameOverScene");
+
+                SceneManager.LoadScene("C.GameOverScene");
                 Debug.Log(collision.gameObject.name);
             });
         }

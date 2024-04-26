@@ -25,6 +25,6 @@ public class Home : MonoBehaviour
     void GameStart()
     {
         // "StartScene" æ¿¿∏∑Œ ¿Ãµø
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("C.StartScene");
     }
 }
