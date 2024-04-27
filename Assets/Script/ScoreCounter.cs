@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
+    public Text scoreText;
+
     private int startY = 3;
     private int score = 0;
 
     private void Start()
     {
-        Debug.Log("초기 스코어 : " + score);
+        UpdateScoreText();
     }
 
 
@@ -21,7 +24,12 @@ public class ScoreCounter : MonoBehaviour
             score++;
         }
 
-        Debug.Log("현재 스코어 : " + score);
+        UpdateScoreText();
     }
-    
+
+    private void UpdateScoreText()
+    {
+        scoreText.text = "현재 스코어 : " + score.ToString();
+    }
+
 }
