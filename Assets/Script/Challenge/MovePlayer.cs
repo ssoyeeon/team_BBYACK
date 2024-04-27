@@ -91,7 +91,7 @@ public class MovePlayer : MonoBehaviour
             {
 
                 SceneManager.LoadScene("C.GameOverScene");
-                Debug.Log(collision.gameObject.name);
+                Debug.Log(collision.gameObject.tag);
             });
         }
     }

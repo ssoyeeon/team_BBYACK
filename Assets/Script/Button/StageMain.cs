@@ -5,10 +5,10 @@ using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Stage : MonoBehaviour
+public class StageMain : MonoBehaviour
 {
-    public void StageMain()
+    public void StageMain1()
     {
-        SceneManager.LoadScene("Stage1Main");
+        SceneManager.LoadScene("StageMain");
     }
 }
