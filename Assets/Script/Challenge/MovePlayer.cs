@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using DG.Tweening;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class MovePlayer : MonoBehaviour
 
     public float StartTime = 3;
     public TMP_Text startFont;
+
+    public Text scoreText;
+    private int score = 0;
 
     public Vector3 minPosition = new Vector3(-15f, -10f, -15f);
     public Vector3 maxPosition = new Vector3(15f, 100f, 15f);
@@ -85,14 +89,27 @@ public class MovePlayer : MonoBehaviour
 
         if (collision != null)
         {
-            canMove = false;
-            _Rigidbody.velocity = Vector3.zero;
-            rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
+            if(collision.gameObject.tag == "Boundary")
             {
+                canMove = false;
+                _Rigidbody.velocity = Vector3.zero;
+                rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
+                {
 
-                SceneManager.LoadScene("C.GameOverScene");
-                Debug.Log(collision.gameObject.tag);
-            });
+                    SceneManager.LoadScene("C.GameOverScene");
+                    Debug.Log(collision.gameObject.tag);
+                });
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Score")
+        {
+            Destroy(other.gameObject);
+            score++;
+            scoreText.text = "Score: " + score;
         }
     }
 }
