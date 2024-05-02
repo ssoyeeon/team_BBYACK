@@ -15,7 +15,7 @@ public class ClearLine : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            SceneManager.LoadScene("StageMain");
+            SceneManager.LoadScene("C.StartScene");
         }
     }
 

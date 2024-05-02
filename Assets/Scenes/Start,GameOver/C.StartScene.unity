@@ -338,7 +338,7 @@ RectTransform:
   m_GameObject: {fileID: 714242238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 3, y: 7, z: 1}
+  m_LocalScale: {x: 2.4337482, y: 5.2579455, z: 0.94698}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2015582674}
@@ -405,9 +405,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 714242240}
+      - m_Target: {fileID: 714242238}
         m_TargetAssemblyTypeName: StageMain, Assembly-CSharp
-        m_MethodName: StageMain1
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -816,7 +816,7 @@ RectTransform:
   m_GameObject: {fileID: 1716284624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 3, y: 7, z: 1}
+  m_LocalScale: {x: 2.489574, y: 5.45293, z: 0.77899}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1375420037}

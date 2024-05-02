@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d03024d798e8b49a41a58f9619e689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObstacleNum: 0
+  ObstacleNum: 1
   Player: {fileID: 0}
   spawner: {fileID: 0}
 --- !u!1 &8314708719817606801

@@ -84,22 +84,18 @@ public class MovePlayer : MonoBehaviour
 
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
-
         if (collision != null)
         {
-            if(collision.gameObject.tag == "Boundary")
+            canMove = false;
+            _Rigidbody.velocity = Vector3.zero;
+            rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
             {
-                canMove = false;
-                _Rigidbody.velocity = Vector3.zero;
-                rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
-                {
-
-                    SceneManager.LoadScene("C.GameOverScene");
-                    Debug.Log(collision.gameObject.tag);
-                });
-            }
+                SceneManager.LoadScene("C.GameOverScene");
+                Debug.Log(collision.gameObject.name);
+            });
         }
     }
 
