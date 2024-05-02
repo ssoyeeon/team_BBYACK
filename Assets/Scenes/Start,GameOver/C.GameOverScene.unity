@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -298,11 +298,12 @@ RectTransform:
   m_GameObject: {fileID: 909652657}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1543995498}
   - {fileID: 2078409308}
+  - {fileID: 975618374}
   m_Father: {fileID: 983887264}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -401,7 +402,7 @@ RectTransform:
   m_GameObject: {fileID: 948974875}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 975618374}
@@ -444,7 +445,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: StageMode
+  m_Text: MAIN
 --- !u!222 &948974878
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -467,7 +468,7 @@ GameObject:
   - component: {fileID: 975618375}
   - component: {fileID: 975618378}
   m_Layer: 5
-  m_Name: Stage1Button
+  m_Name: Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,7 +487,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 948974876}
-  m_Father: {fileID: 983887264}
+  m_Father: {fileID: 909652658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -536,19 +537,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 975618376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 975618378}
-        m_TargetAssemblyTypeName: StageMain, Assembly-CSharp
-        m_MethodName: StageMain1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &975618376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,9 +585,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 975618373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e9068eca4610449b281724eb3d5b29, type: 3}
+  m_Script: {fileID: 11500000, guid: 44c549a1121208d4291c51b37ffa38c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  homeButton: {fileID: 975618375}
 --- !u!1 &983887263
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +622,6 @@ RectTransform:
   m_Children:
   - {fileID: 1872879583}
   - {fileID: 909652658}
-  - {fileID: 975618374}
   m_Father: {fileID: 1389455371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1049,7 +1038,7 @@ RectTransform:
   m_GameObject: {fileID: 1766790065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1543995498}
@@ -1092,7 +1081,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: RESTART
+  m_Text: CHALLENGE
 --- !u!222 &1766790068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1313,7 +1302,7 @@ GameObject:
   - component: {fileID: 2078409309}
   - component: {fileID: 2078409312}
   m_Layer: 5
-  m_Name: Home
+  m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1382,7 +1371,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2078409310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2078409312}
+        m_TargetAssemblyTypeName: StageMain, Assembly-CSharp
+        m_MethodName: StageMain1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2078409310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,10 +1431,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2078409307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44c549a1121208d4291c51b37ffa38c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 90e9068eca4610449b281724eb3d5b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  homeButton: {fileID: 2078409309}
 --- !u!1 &2132813225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1461,7 @@ RectTransform:
   m_GameObject: {fileID: 2132813225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2078409308}
@@ -1504,7 +1504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: HOME
+  m_Text: STAGE
 --- !u!222 &2132813228
 CanvasRenderer:
   m_ObjectHideFlags: 0
