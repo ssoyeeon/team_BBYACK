@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class ClearLine : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject Muge;
 
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.tag == "Player")
         {
-            SceneManager.LoadScene("C.StartScene");
+            if (GameObject.Instantiate<GameObject>(Muge) == null)
+            {
+                SceneManager.LoadScene("C.StartScene");
+            }
+
+            else if (GameObject.Instantiate<GameObject>(Muge) != null)
+            {
+                SceneManager.LoadScene("C.GameOver");
+            }
         }
     }
 
