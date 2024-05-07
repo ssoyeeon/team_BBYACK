@@ -12,7 +12,7 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y - Player.transform.position.y <= -11)
+        if (transform.position.y - Player.transform.position.y <= -12)
         {
             spawner.SpawnObstacle(ObstacleNum);
             Destroy(gameObject);
