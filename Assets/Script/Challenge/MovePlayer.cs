@@ -12,6 +12,8 @@ public class MovePlayer : MonoBehaviour
 {
     private bool canMove = true;
 
+    private bool gamePlay = true;
+
     public GameObject rander;
     public Rigidbody _Rigidbody;
     public int Force = 100;
@@ -87,11 +89,16 @@ public class MovePlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision != null)
+        if (collision != null && gamePlay == true)
         {
             canMove = false;
+            gamePlay = false;
+
             _Rigidbody.velocity = Vector3.zero;
-            rander.transform.DOPunchScale(Vector3.one, 0.7f).OnComplete(() =>
+
+            transform.position += new Vector3(0.0f, 0.0f, -3.0f);
+            
+            rander.transform.DOPunchScale(Vector3.one * 0.3f, 0.7f).OnComplete(() =>
             {
                 SceneManager.LoadScene("C.GameOverScene");
                 Debug.Log(collision.gameObject.name);
