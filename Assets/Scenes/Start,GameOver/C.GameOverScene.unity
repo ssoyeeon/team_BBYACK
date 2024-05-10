@@ -270,6 +270,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412032848}
   m_CullTransparentMesh: 1
+--- !u!1 &707177317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 707177319}
+  - component: {fileID: 707177318}
+  m_Layer: 0
+  m_Name: ButtonController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &707177318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707177317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 157ca01704a79d3499b6e253f6312386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneList:
+  - GameScene
+  - StageMain
+  - C.StartScene
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!4 &707177319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707177317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 807.2303, y: 310.03384, z: -12.059073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909652657
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +531,6 @@ GameObject:
   - component: {fileID: 975618377}
   - component: {fileID: 975618376}
   - component: {fileID: 975618375}
-  - component: {fileID: 975618378}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -537,7 +601,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 975618376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 707177318}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: StageMain
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &975618376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,19 +652,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975618373}
   m_CullTransparentMesh: 1
---- !u!114 &975618378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975618373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44c549a1121208d4291c51b37ffa38c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  homeButton: {fileID: 975618375}
 --- !u!1 &983887263
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +951,6 @@ GameObject:
   - component: {fileID: 1543995501}
   - component: {fileID: 1543995500}
   - component: {fileID: 1543995499}
-  - component: {fileID: 1543995502}
   m_Layer: 5
   m_Name: RESTART
   m_TagString: Untagged
@@ -959,7 +1021,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1543995500}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 707177318}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: StageMain
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1543995500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,19 +1072,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543995497}
   m_CullTransparentMesh: 1
---- !u!114 &1543995502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543995497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a5ab7e4f499bd4498a9a518fa1c3b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startbutton: {fileID: 1543995499}
 --- !u!1 &1766790065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1361,6 @@ GameObject:
   - component: {fileID: 2078409311}
   - component: {fileID: 2078409310}
   - component: {fileID: 2078409309}
-  - component: {fileID: 2078409312}
   m_Layer: 5
   m_Name: Stage
   m_TagString: Untagged
@@ -1372,14 +1432,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2078409312}
-        m_TargetAssemblyTypeName: StageMain, Assembly-CSharp
-        m_MethodName: StageMain1
-        m_Mode: 1
+      - m_Target: {fileID: 707177318}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: StageMain
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1422,18 +1482,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078409307}
   m_CullTransparentMesh: 1
---- !u!114 &2078409312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078409307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e9068eca4610449b281724eb3d5b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2132813225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,3 +1661,4 @@ SceneRoots:
   - {fileID: 1890562432}
   - {fileID: 1389455371}
   - {fileID: 18978660}
+  - {fileID: 707177319}
