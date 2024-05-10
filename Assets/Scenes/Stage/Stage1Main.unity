@@ -285,14 +285,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage1_1, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -418,14 +418,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage1_1, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -559,7 +559,6 @@ GameObject:
   - component: {fileID: 449972025}
   - component: {fileID: 449972024}
   - component: {fileID: 449972023}
-  - component: {fileID: 449972026}
   m_Layer: 5
   m_Name: Stage2
   m_TagString: Untagged
@@ -631,14 +630,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 449972026}
-        m_TargetAssemblyTypeName: Stage1_2, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -681,18 +680,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449972021}
   m_CullTransparentMesh: 1
---- !u!114 &449972026
+--- !u!1 &586190487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 586190489}
+  - component: {fileID: 586190488}
+  m_Layer: 0
+  m_Name: ButtonController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &586190488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449972021}
+  m_GameObject: {fileID: 586190487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46cd38573b6ebcb409b8cb14d3721163, type: 3}
+  m_Script: {fileID: 11500000, guid: 157ca01704a79d3499b6e253f6312386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneList:
+  - C.StartScene
+  - C.GameOverScene
+  - GameScene
+  - StageMain
+  - Stage1Main
+  - Stage1-1
+  - Stage1-2
+  - Stage1-3
+  - Stage1-4
+  - Stage1-5
+  - Stage1-6
+  - Stage1-7
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!4 &586190489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586190487}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 818.2619, y: 456.10535, z: -7.802958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &596545305
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,14 +829,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage1_1, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1095,14 +1148,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage1_1, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1544,14 +1597,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Stage1_1, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1606,7 +1659,6 @@ GameObject:
   - component: {fileID: 1576629004}
   - component: {fileID: 1576629003}
   - component: {fileID: 1576629002}
-  - component: {fileID: 1576629005}
   m_Layer: 5
   m_Name: Stage1
   m_TagString: Untagged
@@ -1678,14 +1730,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1576629005}
-        m_TargetAssemblyTypeName: Stage1_1, Assembly-CSharp
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: StageMain
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1728,18 +1780,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576629000}
   m_CullTransparentMesh: 1
---- !u!114 &1576629005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576629000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa63127a81d29b4d9cb2ad5f03adc51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1666260041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,7 +2059,6 @@ GameObject:
   - component: {fileID: 1884408454}
   - component: {fileID: 1884408453}
   - component: {fileID: 1884408452}
-  - component: {fileID: 1884408451}
   m_Layer: 5
   m_Name: ChMain
   m_TagString: Untagged
@@ -2047,18 +2086,6 @@ RectTransform:
   m_AnchoredPosition: {x: 799, y: -489}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1884408451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884408449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e9068eca4610449b281724eb3d5b29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1884408452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2103,14 +2130,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1884408451}
-        m_TargetAssemblyTypeName: StageMain, Assembly-CSharp
-        m_MethodName: StageMain1
-        m_Mode: 1
+      - m_Target: {fileID: 586190488}
+        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_MethodName: StageMain
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2229,3 +2256,4 @@ SceneRoots:
   - {fileID: 786216240}
   - {fileID: 1666260045}
   - {fileID: 2028436260}
+  - {fileID: 586190489}
