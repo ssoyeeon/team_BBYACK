@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 3048597892113693316}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Muge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

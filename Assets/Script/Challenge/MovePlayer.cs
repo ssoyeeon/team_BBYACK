@@ -10,6 +10,10 @@ using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
+    public GameObject[] mergeObjects;
+    public int mergeLevel = 0;
+
+
     private bool canMove = true;
 
     private bool gamePlay = true;
@@ -30,6 +34,7 @@ public class MovePlayer : MonoBehaviour
     public Vector3 minPosition = new Vector3(-15f, -10f, -15f);
     public Vector3 maxPosition = new Vector3(15f, 100f, 15f);
     public Vector3 originalPosition = new Vector3(0f, 0f, 0f);
+
 
     // Start is called before the first frame update
     void Start()
@@ -82,14 +87,12 @@ public class MovePlayer : MonoBehaviour
                 SceneManager.LoadScene("C.GameOverScene");
             }
         }
-
-
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision != null && gamePlay == true)
+        if (collision != null && gamePlay == true && collision.gameObject.tag != "Muge")
         {
             canMove = false;
             gamePlay = false;
@@ -103,6 +106,35 @@ public class MovePlayer : MonoBehaviour
                 SceneManager.LoadScene("C.GameOverScene");
                 Debug.Log(collision.gameObject.name);
             });
+        }
+
+        //if (gameObject.tag == "Muge")
+        if (collision.gameObject.tag == "Muge")
+        {
+            collision.gameObject.SetActive(false);
+            Debug.Log("충돌 체크 완료");
+            // 합체 버섯과 충돌시 mergeLevel 카운트 변수의 값을 1증가시킴
+            //mergeLevel = mergeLevel + 1;
+            //mergeLevel += 1;
+
+            // 충돌로 인한 합체시 현재단계 오브젝트 Off, 다음 레벨 오브젝트 On
+            // 현재 단계 오브젝트 Off
+            mergeObjects[mergeLevel].SetActive(false);
+
+            ++mergeLevel;
+            mergeLevel = Mathf.Clamp(mergeLevel, 0, mergeObjects.Length - 1);
+            // 다음 레벨 오브젝트 On
+            mergeObjects[mergeLevel].SetActive(true);
+
+            for (int i = 0; i < mergeObjects.Length; ++i)
+            {
+                if (mergeLevel == i)
+                {
+                    mergeObjects[i].SetActive(true);
+                }
+                
+            }
+
         }
     }
 

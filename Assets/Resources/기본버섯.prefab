@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: caa7be55b5b6b9f468bb4436ec99cb1c, type: 2}
     - target: {fileID: 919132149155446097, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}
       propertyPath: m_Name
-      value: "\uBC84\uC12F \uC218\uC815\uBCF8"
+      value: "\uAE30\uBCF8\uBC84\uC12F"
       objectReference: {fileID: 0}
     - target: {fileID: 5508666928164402857, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}
       propertyPath: m_LocalScale.y
@@ -104,6 +104,8 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}
     - {fileID: -8700617353114198275, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}
+    - {fileID: -1014268425052216762, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}
+    - {fileID: 8487167654232718067, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb8db86a1d425b4a91eb43e57df7838, type: 3}

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Boundary
   - Score
+  - Clear
+  - Muge
+  - PoPo
   layers:
   - Default
   - TransparentFX
