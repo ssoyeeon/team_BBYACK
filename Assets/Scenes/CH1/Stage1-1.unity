@@ -473,7 +473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.91
+      value: 43.41
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -613,12 +613,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31830503}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.322576, y: 6.290045, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.992045, y: -32.072113, z: 1.6411018}
+  m_LocalScale: {x: 0.80160326, y: 0.80160326, z: 0.80160326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356646887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &32348944
 GameObject:
@@ -4255,7 +4255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.09
+      value: 45.59
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4563,6 +4563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 534973389}
+  - component: {fileID: 534973390}
   m_Layer: 0
   m_Name: Galaxy
   m_TagString: Untagged
@@ -4599,6 +4600,19 @@ Transform:
   - {fileID: 214355374}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.823}
+--- !u!114 &534973390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534973388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ba4d215567594db7aef8815b6f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 0.1
 --- !u!1 &537452664
 GameObject:
   m_ObjectHideFlags: 0
@@ -4760,12 +4774,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541438760}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9310555, y: 10.691707, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.265376, y: -28.543722, z: 1.6411018}
+  m_LocalScale: {x: 0.80160326, y: 0.80160326, z: 0.80160326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356646887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &542762372
 GameObject:
@@ -6348,6 +6362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717200586}
   - component: {fileID: 717200585}
+  - component: {fileID: 717200587}
   m_Layer: 0
   m_Name: casual-bg_HD Candyland 1_2_2
   m_TagString: Untagged
@@ -6422,6 +6437,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1574445677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &717200587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717200584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ba4d215567594db7aef8815b6f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 0.1
 --- !u!1 &736665864
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,6 +8140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949897357}
   - component: {fileID: 949897356}
+  - component: {fileID: 949897358}
   m_Layer: 0
   m_Name: casual-bg_HD Candyland 1_2_4
   m_TagString: Untagged
@@ -8186,6 +8215,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1574445677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949897358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949897355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ba4d215567594db7aef8815b6f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 0.1
 --- !u!1 &954398644
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,12 +9439,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121900846}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.836549, y: 24.519732, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.594429, y: -17.459133, z: 1.6411018}
+  m_LocalScale: {x: 0.80160326, y: 0.80160326, z: 0.80160326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356646887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1126609161
 GameObject:
@@ -9604,7 +9646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7014cfd60edcce46838f9193be84a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Muge: {fileID: 0}
+  Muge: {fileID: 549286745}
 --- !u!65 &1188171897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10121,6 +10163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245836765}
   - component: {fileID: 1245836764}
+  - component: {fileID: 1245836766}
   m_Layer: 0
   m_Name: casual-bg_HD Candyland 1_2_3
   m_TagString: Untagged
@@ -10195,6 +10238,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1574445677}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1245836766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245836763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ba4d215567594db7aef8815b6f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 0.1
 --- !u!1 &1257443204
 GameObject:
   m_ObjectHideFlags: 0
@@ -10692,12 +10748,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324583524}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9402447, y: 21.291395, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.669535, y: -20.046978, z: 1.6411018}
+  m_LocalScale: {x: 0.80160326, y: 0.80160326, z: 0.80160326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356646887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334832814
 GameObject:
@@ -10776,12 +10832,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334832814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.076788, y: 28.501343, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.24305587, y: -14.267461, z: 1.6411018}
+  m_LocalScale: {x: 0.80160326, y: 0.80160326, z: 0.80160326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356646887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1356646886
 GameObject:
@@ -10792,6 +10848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1356646887}
+  - component: {fileID: 1356646888}
   m_Layer: 0
   m_Name: Galaxy 2
   m_TagString: Untagged
@@ -10849,6 +10906,12 @@ Transform:
   - {fileID: 1444075440}
   - {fileID: 867715338}
   - {fileID: 942235045}
+  - {fileID: 1334832816}
+  - {fileID: 1121900848}
+  - {fileID: 1855465365}
+  - {fileID: 1324583526}
+  - {fileID: 541438762}
+  - {fileID: 31830505}
   - {fileID: 250629400}
   - {fileID: 2054420375}
   - {fileID: 320016690}
@@ -10888,6 +10951,19 @@ Transform:
   - {fileID: 2031807213}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356646888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356646886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ba4d215567594db7aef8815b6f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 0.1
 --- !u!1 &1357482293
 GameObject:
   m_ObjectHideFlags: 0
@@ -11402,6 +11478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452175840}
   - component: {fileID: 1452175841}
+  - component: {fileID: 1452175842}
   m_Layer: 0
   m_Name: casual-bg_HD Candyland 1_2_4 (1)
   m_TagString: Untagged
@@ -11476,6 +11553,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1452175842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452175839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ba4d215567594db7aef8815b6f381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 0.1
 --- !u!1 &1464840972
 GameObject:
   m_ObjectHideFlags: 0
@@ -14565,7 +14655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.46
+      value: 45.96
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15245,7 +15335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.22
+      value: 41.28
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15973,12 +16063,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1855465363}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.200078, y: 12.790115, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.481025, y: -26.861631, z: 1.6411018}
+  m_LocalScale: {x: 0.80160326, y: 0.80160326, z: 0.80160326}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1356646887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858419480
 GameObject:
@@ -17844,7 +17934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2
+      value: 42.7
       objectReference: {fileID: 0}
     - target: {fileID: 2877550120445246919, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17934,9 +18024,3 @@ SceneRoots:
   - {fileID: 534973389}
   - {fileID: 1356646887}
   - {fileID: 1735491163}
-  - {fileID: 1334832816}
-  - {fileID: 1121900848}
-  - {fileID: 1855465365}
-  - {fileID: 1324583526}
-  - {fileID: 541438762}
-  - {fileID: 31830505}
