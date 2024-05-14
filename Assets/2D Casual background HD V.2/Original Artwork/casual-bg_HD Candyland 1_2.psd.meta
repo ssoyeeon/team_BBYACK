@@ -433,7 +433,7 @@ TextureImporter:
         width: 104
         height: 87
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,7 +454,7 @@ TextureImporter:
         width: 110
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -475,7 +475,7 @@ TextureImporter:
         width: 81
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -496,7 +496,7 @@ TextureImporter:
         width: 55
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,6 +504,27 @@ TextureImporter:
       bones: []
       spriteID: 56e03a5f29fd79f429722a6f0dee9f15
       internalID: -780578927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual-bg_HD Candyland 1_2_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 829
+        width: 126
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ada75840cab2942bd27eae1ede9484
+      internalID: -408066441
       vertices: []
       indices: 
       edges: []
@@ -530,6 +551,7 @@ TextureImporter:
       casual-bg_HD Candyland 1_2_16: 387250843
       casual-bg_HD Candyland 1_2_17: 1895213311
       casual-bg_HD Candyland 1_2_18: 309989663
+      casual-bg_HD Candyland 1_2_19: -408066441
       casual-bg_HD Candyland 1_2_2: 1530371714
       casual-bg_HD Candyland 1_2_3: 1209240990
       casual-bg_HD Candyland 1_2_4: -295864963
