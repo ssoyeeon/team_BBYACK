@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: dbd48b63ae3e6f748826bf819cb546a6
+  - enabled: 1
+    path: Assets/Scenes/Start,GameOver/C.Clear.unity
+    guid: b615104f555f9ac4f83307ebb889a02d
   m_configObjects: {}

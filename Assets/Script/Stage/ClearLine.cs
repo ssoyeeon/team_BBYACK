@@ -13,7 +13,7 @@ public class ClearLine : MonoBehaviour
         {
             if (GameObject.Instantiate<GameObject>(Muge) == null)
             {
-                SceneManager.LoadScene("C.StartScene");
+                SceneManager.LoadScene("C.Clear");
             }
 
             else if (GameObject.Instantiate<GameObject>(Muge) != null)
