@@ -47,4 +47,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start,GameOver/C.Clear.unity
     guid: b615104f555f9ac4f83307ebb889a02d
+  - enabled: 1
+    path: Assets/Scenes/Stage/Stage4Main.unity
+    guid: 08f929b97744a3b4ebbb314289f3c072
+  - enabled: 1
+    path: Assets/Scenes/Stage/Stage2Main.unity
+    guid: c985ea98b8cfeb8409e8a7405ad7ee59
+  - enabled: 1
+    path: Assets/Scenes/Stage/Stage3Main.unity
+    guid: 6e5271acb240d69479a40ebc62d82863
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-1.unity
+    guid: deee14130d3298e4a899d2c55a649af2
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-2.unity
+    guid: 3ed95cc8cd469814796e8fb31884bfed
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-3.unity
+    guid: 5f6cac48b57d1bf4181ffde0f2af3011
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-4.unity
+    guid: c6025dcd3aca0c94a8840001470a0928
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-5.unity
+    guid: 7888839604f5a4b41bfc4d47dbb7a58d
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-6.unity
+    guid: 9b93ad8f9a76fa34c86f2f4bf4c3ae54
+  - enabled: 1
+    path: Assets/Scenes/CH4/Stage4-7.unity
+    guid: 5d23368ef56474a4cb3efbc263082d74
   m_configObjects: {}
