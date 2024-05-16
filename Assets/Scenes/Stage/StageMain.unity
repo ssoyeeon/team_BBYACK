@@ -870,8 +870,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneList:
-  - Stage1Main
   - Stage2Main
+  - Stage1Main
   - Stage3Main
   - Stage4Main
   - C.StartScene
