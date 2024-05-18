@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
@@ -31,10 +31,23 @@ public class MovePlayer : MonoBehaviour
     public Text scoreText;
     private int score = 0;
 
+    public int Score => score;
+
     public Vector3 minPosition = new Vector3(-15f, -10f, -15f);
     public Vector3 maxPosition = new Vector3(15f, 100f, 15f);
     public Vector3 originalPosition = new Vector3(0f, 0f, 0f);
 
+    private static MovePlayer instance;
+
+    public static MovePlayer Instance => instance;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -148,3 +161,4 @@ public class MovePlayer : MonoBehaviour
         }
     }
 }
+    
