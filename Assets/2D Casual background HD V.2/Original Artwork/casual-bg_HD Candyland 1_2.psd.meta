@@ -592,6 +592,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: casual-bg_HD Candyland 1_2_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 208
+        height: 752
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e92e10d378ac446961cea8d9b01380
+      internalID: 312126409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casual-bg_HD Candyland 1_2_24
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1128
+        width: 241
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdde98298827fd4ba4309489a15748e
+      internalID: 83215700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -619,6 +661,8 @@ TextureImporter:
       casual-bg_HD Candyland 1_2_20: -1899099647
       casual-bg_HD Candyland 1_2_21: 1822905714
       casual-bg_HD Candyland 1_2_22: -896607031
+      casual-bg_HD Candyland 1_2_23: 2023136912
+      casual-bg_HD Candyland 1_2_24: 83215700
       casual-bg_HD Candyland 1_2_3: 1209240990
       casual-bg_HD Candyland 1_2_4: -295864963
       casual-bg_HD Candyland 1_2_5: -1220182496
