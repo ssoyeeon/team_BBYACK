@@ -13550,7 +13550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1620360631}
   - component: {fileID: 1620360633}
-  - component: {fileID: 1620360632}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_0"
   m_TagString: Untagged
@@ -13573,20 +13572,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1353814474}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1620360632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1620360630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.4
-  spr: {fileID: 1620360633}
 --- !u!212 &1620360633
 SpriteRenderer:
   m_ObjectHideFlags: 0
