@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
@@ -10,9 +10,10 @@ using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
+    private MushroomColor playerMushroomColor;
+
     public GameObject[] mergeObjects;
     public int mergeLevel = 0;
-
 
     private bool canMove = true;
 
@@ -102,6 +103,26 @@ public class MovePlayer : MonoBehaviour
         }
     }
 
+    private MushroomColor GetNextColor(MushroomColor currentColor)
+    {
+        switch (currentColor)
+        {
+            case MushroomColor.Orange:
+                return MushroomColor.yellow;
+            case MushroomColor.yellow:
+                return MushroomColor.Green;
+            case MushroomColor.Green:
+                return MushroomColor.Blue;
+            case MushroomColor.Blue:
+                return MushroomColor.purple;
+            case MushroomColor.purple:
+                return MushroomColor.pink;
+            case MushroomColor.pink:
+                return MushroomColor.Orange;
+            default:
+                return MushroomColor.Orange;
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -113,12 +134,37 @@ public class MovePlayer : MonoBehaviour
             _Rigidbody.velocity = Vector3.zero;
 
             transform.position += new Vector3(0.0f, 0.0f, -3.0f);
-            
+
             rander.transform.DOPunchScale(Vector3.one * 0.3f, 0.7f).OnComplete(() =>
             {
                 SceneManager.LoadScene("C.GameOverScene");
                 Debug.Log(collision.gameObject.name);
             });
+        }
+
+        // 충돌한 게임 오브젝트가 플레이어 오브젝트의 자식 오브젝트인지 확인
+        Mushroom mushroomComponent = collision.gameObject.GetComponentInParent<Mushroom>();
+
+        if (mushroomComponent != null)
+        {
+            // Mushroom 스크립트가 있을 때만 버섯의 색상을 가져옴
+            MushroomColor collidedMushroomColor = mushroomComponent.Color;
+
+            Debug.Log("Player : " + playerMushroomColor);
+
+            Debug.Log("Merge : " + mushroomComponent.Color);
+
+            // 버섯의 색상이 플레이어 버섯의 색상과 같으면 플레이어 버섯의 색상을 변경
+            if (playerMushroomColor == collidedMushroomColor)
+            {
+                // 다음 순서의 색상을 가져옴
+                playerMushroomColor = GetNextColor(playerMushroomColor);
+            }
+            else
+            {
+                // 버섯의 색상이 플레이어 버섯의 색상과 다른 경우에는 게임 오버
+                SceneManager.LoadScene("C.GameOverScene");
+            }
         }
 
         //if (gameObject.tag == "Muge")
@@ -145,7 +191,7 @@ public class MovePlayer : MonoBehaviour
                 {
                     mergeObjects[i].SetActive(true);
                 }
-                
+
             }
 
         }
@@ -153,7 +199,7 @@ public class MovePlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Score")
+        if (other.gameObject.tag == "Score")
         {
             Destroy(other.gameObject);
             score++;
@@ -161,4 +207,4 @@ public class MovePlayer : MonoBehaviour
         }
     }
 }
-    
+
