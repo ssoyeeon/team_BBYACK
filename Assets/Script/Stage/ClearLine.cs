@@ -9,23 +9,9 @@ public class ClearLine : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag == "Player")
+        if (collision.collider.tag == "Player")
         {
-            if (GameObject.Instantiate<GameObject>(Muge) == null)
-            {
-                SceneManager.LoadScene("C.Clear");
-            }
-
-            else if (GameObject.Instantiate<GameObject>(Muge) != null)
-            {
-                SceneManager.LoadScene("C.GameOver");
-            }
+            SceneManager.LoadScene("C.Clear");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

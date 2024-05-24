@@ -42,6 +42,11 @@ public class MovePlayer : MonoBehaviour
 
     public static MovePlayer Instance => instance;
 
+    public float time = 0f;
+
+    public bool mu;
+    public float mu_time;
+
     void Awake()
     {
         if (instance == null)
@@ -62,6 +67,14 @@ public class MovePlayer : MonoBehaviour
     {
         StartTime -= Time.deltaTime;
         startFont.text = StartTime.ToString("F0");
+
+
+
+        mu_time -= Time.deltaTime;
+        if (mu_time <= 0)
+        {            
+            mu = false;
+        }
 
         //스타트 타임
         if (StartTime <= 0)
@@ -126,6 +139,9 @@ public class MovePlayer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (mu)
+            return;
+
         if (collision != null && gamePlay == true && collision.gameObject.tag != "Muge")
         {
             canMove = false;
@@ -170,8 +186,12 @@ public class MovePlayer : MonoBehaviour
         //if (gameObject.tag == "Muge")
         if (collision.gameObject.tag == "Muge")
         {
-            collision.gameObject.SetActive(false);
+            mu = true;
+            mu_time = 1.0f;
+
             Debug.Log("충돌 체크 완료");
+
+            Destroy(collision.gameObject);
             // 합체 버섯과 충돌시 mergeLevel 카운트 변수의 값을 1증가시킴
             //mergeLevel = mergeLevel + 1;
             //mergeLevel += 1;
