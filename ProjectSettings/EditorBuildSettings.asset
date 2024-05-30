@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start,GameOver/C.GameOverScene.unity
     guid: 30be2d3de0d28b340896ad17277265b6
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-1.unity
+    path: Assets/Scenes/CH2/Stage1-1.unity
     guid: 08f75468f1353ff4e8b6b29edd067ae1
   - enabled: 1
     path: Assets/Scenes/Stage/Stage1Main.unity
@@ -24,22 +24,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage/StageMain.unity
     guid: 63c1797fa8e651e4cbc36f669f568876
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-2.unity
+    path: Assets/Scenes/CH2/Stage1-2.unity
     guid: 3dd0ce1b76f817d4d91ed2fc2c58a921
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-7.unity
+    path: Assets/Scenes/CH2/Stage1-7.unity
     guid: b4acf83a75858824cb2d7d048f6771e3
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-6.unity
+    path: Assets/Scenes/CH2/Stage1-6.unity
     guid: b0811229ddc10de4e8c96763fd1cd4f1
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-5.unity
+    path: Assets/Scenes/CH2/Stage1-5.unity
     guid: b5dab64b515f0ea4b9a66c6a30504c10
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-4.unity
+    path: Assets/Scenes/CH2/Stage1-4.unity
     guid: e2c5ed87d42cffa4ba38072c8643a250
   - enabled: 1
-    path: Assets/Scenes/CH1/Stage1-3.unity
+    path: Assets/Scenes/CH2/Stage1-3.unity
     guid: 18d5a86401f317c4ca1d0c6ec0a71e80
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
