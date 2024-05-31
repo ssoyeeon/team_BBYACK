@@ -8199,7 +8199,6 @@ MonoBehaviour:
   minPosition: {x: -15, y: -10, z: -15}
   maxPosition: {x: 15, y: 9999, z: 15}
   originalPosition: {x: 0, y: 0, z: 0}
-  time: 0
   mu: 0
   mu_time: 0
 --- !u!65 &549286747
@@ -33766,14 +33765,14 @@ SceneRoots:
   - {fileID: 250728368}
   - {fileID: 363133384}
   - {fileID: 1716831003}
-  - {fileID: 1775446874}
   - {fileID: 1858913236}
-  - {fileID: 298398038}
   - {fileID: 1961935955}
-  - {fileID: 787824058}
   - {fileID: 66028209}
-  - {fileID: 1332037436}
   - {fileID: 1648825092}
-  - {fileID: 712042734}
   - {fileID: 1121047275}
   - {fileID: 1047691191}
+  - {fileID: 1775446874}
+  - {fileID: 298398038}
+  - {fileID: 787824058}
+  - {fileID: 1332037436}
+  - {fileID: 712042734}

@@ -710,18 +710,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneList:
-  - C.StartScene
-  - C.GameOverScene
-  - GameScene
-  - StageMain
-  - Stage1Main
-  - Stage1-1
-  - Stage1-2
-  - Stage1-3
-  - Stage1-4
-  - Stage1-5
-  - Stage1-6
-  - Stage1-7
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
