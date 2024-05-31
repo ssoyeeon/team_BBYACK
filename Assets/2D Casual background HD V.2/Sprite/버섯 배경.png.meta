@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 78a7519475210c44482bae14759ef9cf
 TextureImporter:
   internalIDToNameTable: []
@@ -64,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -125,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee573c4d96f33e4a9e4ff9dc5cff7bf
-      internalID: 1246870331
+      spriteID: 611c79e493f03454ba7fc628cbfc695f
+      internalID: -1967555028
       vertices: []
       indices: 
       edges: []
@@ -134,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2ba134ce148d2294daae44f1291d6741
+    spriteID: 5ef44cc8b4bda2140b7be18c3be7a7d4
     internalID: 0
     vertices: []
     indices: 
@@ -142,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\uBC84\uC12F \uBC30\uACBD_0": 1246870331
+      "\uBC84\uC12F \uBC30\uACBD_0": -1967555028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

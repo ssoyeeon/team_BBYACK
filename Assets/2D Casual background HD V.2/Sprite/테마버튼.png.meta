@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 05ef08a98458d9e4d80795c9e87ba840
 TextureImporter:
   internalIDToNameTable: []
@@ -64,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,19 +113,19 @@ TextureImporter:
       name: "\uD14C\uB9C8\uBC84\uD2BC_0"
       rect:
         serializedVersion: 2
-        x: 68
-        y: 305
-        width: 361
-        height: 533
+        x: 521
+        y: 300
+        width: 359
+        height: 537
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4be2a98717f213d409b7dd90a45992ed
-      internalID: 218122119
+      spriteID: a879d236bc8777944b57cb92eea39824
+      internalID: 2064657507
       vertices: []
       indices: 
       edges: []
@@ -135,19 +134,19 @@ TextureImporter:
       name: "\uD14C\uB9C8\uBC84\uD2BC_1"
       rect:
         serializedVersion: 2
-        x: 519
+        x: 70
         y: 305
-        width: 361
-        height: 533
+        width: 357
+        height: 534
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca511d2498a742f45b76df197c5e99d5
-      internalID: -1221942925
+      spriteID: c07ade49794467d448ed825452861838
+      internalID: -830806102
       vertices: []
       indices: 
       edges: []
@@ -155,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d6b9c4cae77ac07468e22891353827e5
+    spriteID: a20ac7a30819e604baf229cada61eb42
     internalID: 0
     vertices: []
     indices: 
@@ -163,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\uD14C\uB9C8\uBC84\uD2BC_0": 218122119
-      "\uD14C\uB9C8\uBC84\uD2BC_1": -1221942925
+      "\uD14C\uB9C8\uBC84\uD2BC_0": 2064657507
+      "\uD14C\uB9C8\uBC84\uD2BC_1": -830806102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

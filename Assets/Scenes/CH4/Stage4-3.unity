@@ -2112,7 +2112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 3
+  Color: 0
 --- !u!212 &136178309
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17979,7 +17979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 1
+  Color: 0
 --- !u!212 &1122422115
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23463,7 +23463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 2
+  Color: 0
 --- !u!212 &1480818323
 SpriteRenderer:
   m_ObjectHideFlags: 0
