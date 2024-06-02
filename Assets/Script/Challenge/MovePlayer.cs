@@ -7,6 +7,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEditor;
 using UnityEngine.UI;
+using DG.Tweening.Core.Easing;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class MovePlayer : MonoBehaviour
 
     public bool mu;
     public float mu_time;
+    public GameObject muspr;
 
     void Awake()
     {
@@ -58,6 +60,8 @@ public class MovePlayer : MonoBehaviour
     {
         _Rigidbody.velocity = Vector3.zero;
         _Rigidbody.useGravity = false;
+        muspr.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -72,6 +76,12 @@ public class MovePlayer : MonoBehaviour
         if (mu_time <= 0)
         {            
             mu = false;
+            muspr.SetActive(false);
+        }
+
+        if( mu == true )
+        {
+            muspr.SetActive(true);
         }
 
         //스타트 타임
