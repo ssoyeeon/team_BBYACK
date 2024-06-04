@@ -6785,7 +6785,6 @@ GameObject:
   m_Component:
   - component: {fileID: 627654471}
   - component: {fileID: 627654470}
-  - component: {fileID: 627654469}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_0"
   m_TagString: Untagged
@@ -6793,20 +6792,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &627654469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627654468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.4
-  spr: {fileID: 627654470}
 --- !u!212 &627654470
 SpriteRenderer:
   m_ObjectHideFlags: 0
