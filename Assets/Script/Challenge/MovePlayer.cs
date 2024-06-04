@@ -47,6 +47,8 @@ public class MovePlayer : MonoBehaviour
     public float mu_time;
     public GameObject muspr;
 
+    public AudioSource audioPlayer;
+
     void Awake()
     {
         if (instance == null)
@@ -60,13 +62,13 @@ public class MovePlayer : MonoBehaviour
     {
         _Rigidbody.velocity = Vector3.zero;
         _Rigidbody.useGravity = false;
-        muspr.SetActive(false);
+        muspr.SetActive(false);       
 
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {     
         StartTime -= Time.deltaTime;
         startFont.text = StartTime.ToString("F0");
 
@@ -92,13 +94,15 @@ public class MovePlayer : MonoBehaviour
             _Rigidbody.useGravity = true;
 
             if (canMove == true)
-            {
+            {               
                 //마우스 좌클릭 시에 왼쪽 위로 올라감
                 if (Input.GetMouseButtonDown(0))
                 {
                     _Rigidbody.velocity = Vector3.zero;
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.left * Force1, ForceMode.Impulse);
+
+                    audioPlayer.Play();
                 }
 
                 //마우스 우클릭 시에 오른쪽 위로 올라감
@@ -107,6 +111,8 @@ public class MovePlayer : MonoBehaviour
                     _Rigidbody.velocity = Vector3.zero;
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.right * Force1, ForceMode.Impulse);
+
+                    audioPlayer.Play();
                 }
             }
 
@@ -119,7 +125,7 @@ public class MovePlayer : MonoBehaviour
             if (transform.position != clasmpedPosition)
             {
                 gameObject.transform.position = new Vector3(0.0f, 1.0f, 0.0f);
-                SceneManager.LoadScene("C.GameOverScene");
+                SceneManager.LoadScene("C.GameOverScene");             
             }
         }
     }
