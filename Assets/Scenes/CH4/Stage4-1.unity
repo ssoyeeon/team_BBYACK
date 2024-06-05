@@ -5501,7 +5501,6 @@ GameObject:
   m_Component:
   - component: {fileID: 662344086}
   - component: {fileID: 662344085}
-  - component: {fileID: 662344084}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_0"
   m_TagString: Untagged
@@ -5509,20 +5508,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &662344084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 662344083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.4
-  spr: {fileID: 662344085}
 --- !u!212 &662344085
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16554,7 +16539,7 @@ MonoBehaviour:
   moveSpeed: 0
   moveSpeed1: 5
   StartTime: 3
-  startFont: {fileID: 0}
+  startFont: {fileID: 2080996151}
   scoreText: {fileID: 0}
   minPosition: {x: -15, y: -10, z: -15}
   maxPosition: {x: 15, y: 9999, z: 15}

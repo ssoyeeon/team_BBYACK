@@ -4294,7 +4294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 0.4
   spr: {fileID: 68288071}
 --- !u!1 &70381185
 GameObject:
@@ -29015,7 +29015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 0.4
   spr: {fileID: 525831772}
 --- !u!1 &525927530
 GameObject:
@@ -47548,7 +47548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 0.4
   spr: {fileID: 836632642}
 --- !u!1 &838292924
 GameObject:
@@ -55341,7 +55341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 0.4
   spr: {fileID: 982953220}
 --- !u!1 &984634417
 GameObject:
@@ -63222,7 +63222,7 @@ MonoBehaviour:
   moveSpeed: 0
   moveSpeed1: 5
   StartTime: 3
-  startFont: {fileID: 0}
+  startFont: {fileID: 794285415}
   scoreText: {fileID: 0}
   minPosition: {x: -15, y: -10, z: -15}
   maxPosition: {x: 15, y: 9999, z: 15}
@@ -81453,7 +81453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 0.4
   spr: {fileID: 1477251685}
 --- !u!1 &1479009752
 GameObject:
@@ -115854,7 +115854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 0.4
   spr: {fileID: 2072739353}
 --- !u!1 &2072784770
 GameObject:

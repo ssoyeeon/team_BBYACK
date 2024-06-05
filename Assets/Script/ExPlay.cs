@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class ExPlay : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,6 @@ public class ExPlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 }
