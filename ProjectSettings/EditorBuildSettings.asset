@@ -80,4 +80,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CH3/Stage3-1.unity
     guid: 484eb654687b2b54bb2447956df0f8dd
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-1.unity
+    guid: 261176049511ef84a9c1bfa6e5b33050
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-2.unity
+    guid: d372d2962c6b18f40b4ffa3c48909747
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-3.unity
+    guid: 15711fc61d9ffcc44a81acd511882946
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-4.unity
+    guid: aa523116a5557cf4f90f4f288a45926f
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-5.unity
+    guid: 2edb4805459c43d47bc80c7d80c3ab5f
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-6.unity
+    guid: 3eb2d60d99a809e4ab6f6f009c67e86b
+  - enabled: 1
+    path: Assets/Scenes/CH1/Stage2-7.unity
+    guid: 2c07ab621840ea74b8da0b246a81e07c
   m_configObjects: {}

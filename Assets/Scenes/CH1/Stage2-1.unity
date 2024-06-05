@@ -889,7 +889,6 @@ GameObject:
   m_Component:
   - component: {fileID: 105278484}
   - component: {fileID: 105278483}
-  - component: {fileID: 105278482}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_0"
   m_TagString: Untagged
@@ -897,20 +896,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &105278482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105278481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.4
-  spr: {fileID: 105278483}
 --- !u!212 &105278483
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12582,6 +12567,7 @@ MonoBehaviour:
   mu: 0
   mu_time: 0
   muspr: {fileID: 1739842231}
+  audioPlayer: {fileID: 0}
 --- !u!65 &1701927731
 BoxCollider:
   m_ObjectHideFlags: 0

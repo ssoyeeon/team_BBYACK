@@ -2602,6 +2602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258497088}
   - component: {fileID: 258497087}
+  - component: {fileID: 258497089}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_2"
   m_TagString: Untagged
@@ -2676,6 +2677,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892990039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &258497089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258497086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.4
+  spr: {fileID: 258497087}
 --- !u!1 &263857063
 GameObject:
   m_ObjectHideFlags: 0
@@ -9632,6 +9647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927718515}
   - component: {fileID: 927718514}
+  - component: {fileID: 927718516}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_4"
   m_TagString: Untagged
@@ -9706,6 +9722,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892990039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927718516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927718513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.4
+  spr: {fileID: 927718514}
 --- !u!1 &945032361
 GameObject:
   m_ObjectHideFlags: 0
@@ -13740,6 +13770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1293554620}
   - component: {fileID: 1293554619}
+  - component: {fileID: 1293554621}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_3"
   m_TagString: Untagged
@@ -13814,6 +13845,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892990039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1293554621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293554618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.4
+  spr: {fileID: 1293554619}
 --- !u!1 &1296789370
 GameObject:
   m_ObjectHideFlags: 0
@@ -15776,6 +15821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1468884620}
   - component: {fileID: 1468884619}
+  - component: {fileID: 1468884621}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_1"
   m_TagString: Untagged
@@ -15850,6 +15896,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892990039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468884621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468884618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.4
+  spr: {fileID: 1468884619}
 --- !u!1 &1468927790
 GameObject:
   m_ObjectHideFlags: 0
@@ -19838,6 +19898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714006752}
   - component: {fileID: 1714006751}
+  - component: {fileID: 1714006753}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_5"
   m_TagString: Untagged
@@ -19912,6 +19973,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 892990039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1714006753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714006750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.4
+  spr: {fileID: 1714006751}
 --- !u!1 &1720378358
 GameObject:
   m_ObjectHideFlags: 0
