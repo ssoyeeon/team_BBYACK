@@ -16444,7 +16444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 2
 --- !u!212 &1394743586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20415,7 +20415,6 @@ MonoBehaviour:
   mu: 0
   mu_time: 0
   muspr: {fileID: 1739842231}
-  audioPlayer: {fileID: 0}
 --- !u!65 &1701927731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22117,7 +22116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 1
 --- !u!212 &1801156494
 SpriteRenderer:
   m_ObjectHideFlags: 0

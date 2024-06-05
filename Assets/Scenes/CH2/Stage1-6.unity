@@ -2186,7 +2186,7 @@ Transform:
   m_GameObject: {fileID: 88312783}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3, y: 57, z: 0}
+  m_LocalPosition: {x: 5.3, y: 106.05, z: 0}
   m_LocalScale: {x: 70.93305, y: 0.22936, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31943,7 +31943,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1327114547}
   - component: {fileID: 1327114546}
-  - component: {fileID: 1327114545}
   m_Layer: 0
   m_Name: "\uBC84\uC12F 2D_0"
   m_TagString: Untagged
@@ -31951,20 +31950,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1327114545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327114544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c9350acb74402747967c6e2e0b2ccfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  duration: 0.4
-  spr: {fileID: 1327114546}
 --- !u!212 &1327114546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -48423,7 +48408,7 @@ Transform:
   m_GameObject: {fileID: 2000959301}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.11593659, w: 0.9932567}
-  m_LocalPosition: {x: 38.3, y: 94.5, z: -0.93559}
+  m_LocalPosition: {x: 40.2, y: 86.48, z: -0.93559}
   m_LocalScale: {x: 2.4292643, y: 2.4292643, z: 2.4292643}
   m_ConstrainProportionsScale: 0
   m_Children:
