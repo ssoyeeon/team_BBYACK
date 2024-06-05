@@ -47,8 +47,6 @@ public class MovePlayer : MonoBehaviour
     public float mu_time;
     public GameObject muspr;
 
-    public AudioSource audioPlayer;
-
     void Awake()
     {
         if (instance == null)
@@ -101,8 +99,6 @@ public class MovePlayer : MonoBehaviour
                     _Rigidbody.velocity = Vector3.zero;
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.left * Force1, ForceMode.Impulse);
-
-                    audioPlayer.Play();
                 }
 
                 //마우스 우클릭 시에 오른쪽 위로 올라감
@@ -112,7 +108,6 @@ public class MovePlayer : MonoBehaviour
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.right * Force1, ForceMode.Impulse);
 
-                    audioPlayer.Play();
                 }
             }
 
