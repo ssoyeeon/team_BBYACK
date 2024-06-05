@@ -266,8 +266,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 251627318}
+  - component: {fileID: 251627319}
   m_Layer: 0
-  m_Name: AudioController
+  m_Name: AudioMixweController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,6 +289,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &251627319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251627317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df81db80d5228154c931a6361657ff61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 4d7535c2625a94340a69fdb32f5507a3, type: 2}
+  musicMasterSlider: {fileID: 1498501385}
+  musicBGMSlider: {fileID: 1442241032}
+  musicSFXSlider: {fileID: 1665511897}
 --- !u!1 &295210604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,7 +1540,7 @@ GameObject:
   - component: {fileID: 1442241031}
   - component: {fileID: 1442241032}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1613,7 +1630,7 @@ GameObject:
   - component: {fileID: 1498501384}
   - component: {fileID: 1498501385}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1701,6 +1718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1527535357}
+  - component: {fileID: 1527535358}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -1723,6 +1741,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1527535358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527535356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1567dc31c3a076c43bdea006af2ed3f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BackGround
+    clip: {fileID: 8300000, guid: 59266fe5e30f0b04980fb382f6e96dc8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: 9196940434133388110, guid: 4d7535c2625a94340a69fdb32f5507a3, type: 2}
+    source: {fileID: 0}
+  - name: Cannon
+    clip: {fileID: 8300000, guid: 193f5321fe6c62c4abd7652bfe330bdc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 7545468621372139858, guid: 4d7535c2625a94340a69fdb32f5507a3, type: 2}
+    source: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: 4d7535c2625a94340a69fdb32f5507a3, type: 2}
 --- !u!1 &1563775196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1884,7 @@ GameObject:
   - component: {fileID: 1665511896}
   - component: {fileID: 1665511897}
   m_Layer: 5
-  m_Name: Slider (2)
+  m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1992,7 +2038,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956756858}
   m_CullTransparentMesh: 1
---- !u!1 &2042334062
+--- !u!1 &1982060465
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2000,7 +2046,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2042334063}
+  - component: {fileID: 1982060467}
+  - component: {fileID: 1982060466}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -2008,16 +2055,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2042334063
+--- !u!114 &1982060466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982060465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3012dc2dd47dbf468f009b5a96df57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1982060467
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042334062}
+  m_GameObject: {fileID: 1982060465}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.739274, y: 4.399618, z: -7.1893835}
+  m_LocalPosition: {x: 962.76605, y: 736, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2289,7 +2348,7 @@ SceneRoots:
   - {fileID: 295210606}
   - {fileID: 1527535357}
   - {fileID: 251627318}
-  - {fileID: 2042334063}
   - {fileID: 2056644212}
   - {fileID: 1563775199}
   - {fileID: 456515935}
+  - {fileID: 1982060467}

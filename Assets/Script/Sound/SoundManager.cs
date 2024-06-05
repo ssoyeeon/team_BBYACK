@@ -18,6 +18,9 @@ public class Sound
     public bool loop;
     public AudioMixerGroup mixerGroup;
 
+    [HideInInspector]
+    public AudioSource source;
+
 }
 public class SoundManager : MonoBehaviour
 {
@@ -48,15 +51,18 @@ public class SoundManager : MonoBehaviour
             sound.source.outputAudioMixerGroup = sound.mixerGroup;
         }
     }
-    // Start is called before the first frame update
-    void Start()
+    
+    public void PlaySound(string name)
     {
-        
-    }
+        Sound soundToPlay = sounds.Find( sound => sound.name == name); 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        if (soundToPlay != null)
+        {
+            soundToPlay.source.Play();
+        }
+        else
+        {
+            Debug.LogWarning("사운드 :" + name + "없어 ");
+        }
+    }    
 }
