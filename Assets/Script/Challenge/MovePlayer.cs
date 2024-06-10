@@ -100,8 +100,6 @@ public class MovePlayer : MonoBehaviour
                     _Rigidbody.velocity = Vector3.zero;
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.left * Force1, ForceMode.Impulse);
-
-                    SoundManager.instance.PlaySound("Cannon");
                 }
 
                 //마우스 우클릭 시에 오른쪽 위로 올라감
@@ -110,8 +108,6 @@ public class MovePlayer : MonoBehaviour
                     _Rigidbody.velocity = Vector3.zero;
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.right * Force1, ForceMode.Impulse);
-
-                    SoundManager.instance.PlaySound("Cannon");
                 }
             }
 
@@ -123,8 +119,7 @@ public class MovePlayer : MonoBehaviour
 
             if (transform.position != clasmpedPosition)
             {
-                gameObject.transform.position = new Vector3(0.0f, 1.0f, 0.0f);
-                SceneManager.LoadScene("C.GameOverScene");             
+                gameObject.transform.position = new Vector3(0.0f, 1.0f, 0.0f);      
             }
         }
     }
