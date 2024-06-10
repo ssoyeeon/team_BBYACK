@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AchievementUI : MonoBehaviour
+public class AchievementUIManager : MonoBehaviour
 {
     public GameObject achievementPanel;
     public GameObject achievementItemPrefab;
@@ -14,12 +13,12 @@ public class AchievementUI : MonoBehaviour
     private void Start()
     {
         UpdateAchievementUI();
-    }    
+    }
 
     public void UpdateAchievementUI()
     {
         ClearAchievementUI();
-        foreach(var achievement in AchievementManager.instance.achievements)
+        foreach (var achievement in AchievementManager.instance.achievements)
         {
             GameObject item = Instantiate(achievementItemPrefab, content);
             Text[] texts = item.GetComponentsInChildren<Text>();
@@ -27,9 +26,10 @@ public class AchievementUI : MonoBehaviour
             texts[1].text = achievement.description;
             texts[2].text = $"{achievement.currentProgress}/{achievement.goal}";
             texts[3].text = achievement.isUnlocked ? "含失" : "耕含失";
+            achievementItems.Add(item);
         }
     }
-    
+
     private void ClearAchievementUI()
     {
         foreach (var item in achievementItems)
