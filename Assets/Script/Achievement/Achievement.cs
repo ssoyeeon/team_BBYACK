@@ -1,7 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
+
+[Serializable]
 public class Achievement
 {
     public string name;
@@ -18,13 +19,13 @@ public class Achievement
         this.currentProgress = 0;
         this.goal = goal;
     }
-    
+
     public void AddProgress(int amount)
     {
-        if(!isUnlocked)
+        if (!isUnlocked)
         {
             currentProgress += amount;
-            if(currentProgress >= goal)
+            if (currentProgress >= goal)
             {
                 isUnlocked = true;
                 OnAchievementUnlocked();
@@ -34,6 +35,6 @@ public class Achievement
 
     protected virtual void OnAchievementUnlocked()
     {
-        Debug.Log($"诀利 崔己 : {name}");
+        Debug.Log($"诀利 崔己: {name}");
     }
 }
