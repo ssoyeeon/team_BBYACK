@@ -11,7 +11,8 @@ public enum MushroomColor
     Blue,
     purple,
     pink,
-    dahong
+    dahong,
+    darkwhite
 }
 public class Mushroom : MonoBehaviour
 {
