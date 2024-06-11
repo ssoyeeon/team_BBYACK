@@ -9,7 +9,9 @@ using UnityEditor;
 
 public class Player : MonoBehaviour
 {
-    public static Player instance;
+    private static Player instance;
+
+    public static Player Instance => instance;
 
     //¸ÓÁö ¹ö¼¸
     private MushroomColor playerMushroomColor;
@@ -50,12 +52,35 @@ public class Player : MonoBehaviour
        Destroy(gameObject);
     }
 
-    void StartGame()
+    void Start()
     {
-        if(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        rig.velocity = Vector3.zero;
+        rig.useGravity = false;
+        shield.SetActive(false);
+    }
+
+
+    void Update()
+    {
+        StartTime -= Time.deltaTime;
+        startFont.text = StartTime.ToString("F0");
+
+        if(StartTime <= 0)
         {
+            StartTime = 0;
+            startFont.text = "";
+            rig.useGravity = true;
             canMove = true;
         }
+        mumu();
+        GamePlay();
+        StartGame();
+        Out();
+    }
+
+    void StartGame()
+    {
+
     }
     void GamePlay()
     {
@@ -138,17 +163,17 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene("C.GameOverScene");
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         if (mu)
             return;
 
-        if (collision != null && collision.gameObject.tag != "Muge")
+        if (other != null && other.gameObject.tag != "Muge")
         {
             Die();
         }
 
-        Mushroom mushroomComponent = collision.gameObject.GetComponentInParent<Mushroom>();
+        Mushroom mushroomComponent = other.gameObject.GetComponentInParent<Mushroom>();
 
         if (mushroomComponent != null)
         {
@@ -164,18 +189,18 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.tag == "Muge")
+        if (other.gameObject.tag == "Muge")
         {
             mu = true;
             mu_time = 2f;
 
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
 
             mergeObjects[mergeLevel].SetActive(false);
 
             ++mergeLevel;
             mergeLevel = Mathf.Clamp(mergeLevel, 0, mergeObjects.Length - 1);
-            
+
             mergeObjects[mergeLevel].SetActive(true);
 
             for (int i = 0; i < mergeObjects.Length; ++i)
@@ -188,28 +213,12 @@ public class Player : MonoBehaviour
             }
 
         }
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
         if (other.gameObject.tag == "Score")
         {
             Destroy(other.gameObject);
             score++;
             scoreText.text = "Score: " + score;
         }
-    }
-
-    void Start()
-    {
-        rig.velocity = Vector3.zero;
-        rig.useGravity = false;
-        shield.SetActive(false);
-    }
-
-    
-    void Update()
-    {
-        
     }
 }

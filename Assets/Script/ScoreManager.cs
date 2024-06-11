@@ -11,20 +11,19 @@ public class ScoreManager : MonoBehaviour
     private int bestScore;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        score = MovePlayer.Instance.Score;
-        score_Text.text = "Score: " + score.ToString();
+    //void Start()
+    //{
+    //    score = MovePlayer.Instance.Score;
+    //    score_Text.text = "Score: " + score.ToString();
 
-        bestScore = PlayerPrefs.GetInt("BestScore", 0);
-        score_Text.text = "Best Score : " + bestScore.ToString();
+    //    bestScore = PlayerPrefs.GetInt("BestScore", 0);
+    //    score_Text.text = "Best Score : " + bestScore.ToString();
 
 
-        if (score > bestScore)
-        {
-            bestScore = score;
-            PlayerPrefs.SetInt("BestScore", bestScore);
-            score_Text.text = "Best Score: " + bestScore.ToString();
-        }
+    //    if (score > bestScore)
+    //    {
+    //        bestScore = score;
+    //        PlayerPrefs.SetInt("BestScore", bestScore);
+    //        score_Text.text = "Best Score: " + bestScore.ToString();
+    //    }
     }
-}
