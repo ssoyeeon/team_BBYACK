@@ -119,4 +119,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CH3/Stage3-7.unity
     guid: a11eb7e665e5fb341bb7dbc3f6819efb
+  - enabled: 1
+    path: Assets/Scenes/Achievement.unity
+    guid: e4e80088f44c6da41bc9398c7bcdd14e
   m_configObjects: {}

@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
+    public static ScoreManager instance;    
+
     public Text score_Text;
 
-    private int score;
+    public int score;
     private int bestScore;
 
     public GameObject gameOver;
