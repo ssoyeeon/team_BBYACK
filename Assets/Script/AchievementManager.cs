@@ -12,6 +12,8 @@ public class AchievementManager : MonoBehaviour
 
     public Text[] AchievementTexts = new Text[4];
 
+    private int clickCount = 0;
+
     private void Awake()
     {
         if (instance == null)
@@ -37,19 +39,20 @@ public class AchievementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
-            AddProgressInList("가윤언니의 오른 팔", 1);
-            UpdateAchievementUI();
+                AddProgressInList("클릭", 1);
+                UpdateAchievementUI();
+            
         }
-        //if (ScoreManager.instance.score == 20)
+        //if (ScoreManager.Instance.score == 20)
         //{
-        //    AddProgressInList("많이 올라가셨네요!", 2);
+        //    AddProgressInList("많이 올라가셨네요!", 1);
         //    UpdateAchievementUI();
         //}
         //if (ScoreManager.instance.score == 50)
         //{
-        //    AddProgressInList("이런 미 개발 구역을 지나셨군요!!!!!!!", 3);
+        //    AddProgressInList("이런 미 개발 구역을 지나셨군요!!!!!!!", 1);
         //    UpdateAchievementUI();
         //}
     }

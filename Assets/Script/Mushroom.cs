@@ -7,9 +7,11 @@ public enum MushroomColor
     Orange,
     yellow,
     Green,
+    SkyBule,
     Blue,
     purple,
-    pink
+    pink,
+    dahong
 }
 public class Mushroom : MonoBehaviour
 {

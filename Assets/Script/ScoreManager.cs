@@ -4,15 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
-{
-    public static ScoreManager instance;    
-
+{ 
     public Text score_Text;
 
     public int score;
     private int bestScore;
-
-    public GameObject gameOver;
 
     // Start is called before the first frame update
     void Start()
