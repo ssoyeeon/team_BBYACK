@@ -22700,8 +22700,8 @@ GameObject:
   - component: {fileID: 1260806586}
   - component: {fileID: 1260806585}
   - component: {fileID: 1260806584}
-  - component: {fileID: 1260806583}
   - component: {fileID: 1260806582}
+  - component: {fileID: 1260806588}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -22736,41 +22736,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &1260806583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1260806581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa934cd71e4da184cac5ddfce855ee8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mergeObjects:
-  - {fileID: 461471690}
-  - {fileID: 905107471}
-  - {fileID: 1242270994}
-  - {fileID: 472558196}
-  - {fileID: 1694061719}
-  - {fileID: 1280731654}
-  mergeLevel: 0
-  rander: {fileID: 1260806581}
-  _Rigidbody: {fileID: 1260806582}
-  Force: 23
-  Force1: 4
-  moveSpeed: 0
-  moveSpeed1: 5
-  StartTime: 3
-  startFont: {fileID: 1750894650}
-  scoreText: {fileID: 0}
-  minPosition: {x: -15, y: -10, z: -15}
-  maxPosition: {x: 15, y: 9999, z: 15}
-  originalPosition: {x: 0, y: 0, z: 0}
-  mu: 0
-  mu_time: 0
-  muspr: {fileID: 15389616}
 --- !u!65 &1260806584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22867,6 +22832,32 @@ Transform:
   - {fileID: 1387339717}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260806588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260806581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851d647f4b24351428c8bf3881796ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mergeObjects:
+  - {fileID: 461471690}
+  - {fileID: 905107471}
+  - {fileID: 1242270994}
+  - {fileID: 472558196}
+  - {fileID: 1280731654}
+  - {fileID: 1694061719}
+  - {fileID: 1153727389}
+  - {fileID: 1387339716}
+  rig: {fileID: 1260806582}
+  StartTime: 3
+  startFont: {fileID: 1750894650}
+  scoreText: {fileID: 0}
+  shield: {fileID: 15389616}
 --- !u!1 &1263140579
 GameObject:
   m_ObjectHideFlags: 0
