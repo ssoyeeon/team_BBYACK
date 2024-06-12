@@ -7,7 +7,7 @@ public enum MushroomColor
     Orange,
     yellow,
     Green,
-    SkyBule,
+    SkyBlue,
     Blue,
     purple,
     pink,
