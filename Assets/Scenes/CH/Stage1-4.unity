@@ -5055,7 +5055,7 @@ MonoBehaviour:
   maxPosition: {x: 15, y: 9999, z: 15}
   originalPosition: {x: 0, y: 0, z: 0}
   mu: 0
-  mu_time: 0
+  mu_time: 2
   muspr: {fileID: 1734679678}
 --- !u!65 &389642435
 BoxCollider:

@@ -119,7 +119,7 @@ public class MovePlayer : MonoBehaviour
 
             if (transform.position != clasmpedPosition)
             {
-                gameObject.transform.position = new Vector3(0.0f, 1.0f, 0.0f);      
+                SceneManager.LoadScene("C.GameOverScene"); 
             }
         }
     }
