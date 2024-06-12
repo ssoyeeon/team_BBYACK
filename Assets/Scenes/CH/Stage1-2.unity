@@ -14645,7 +14645,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1403997348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 851d647f4b24351428c8bf3881796ee2, type: 3}
+  m_Script: {fileID: 11500000, guid: fa934cd71e4da184cac5ddfce855ee8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mergeObjects:
@@ -14655,13 +14655,22 @@ MonoBehaviour:
   - {fileID: 743850213}
   - {fileID: 60720925}
   - {fileID: 492847104}
-  - {fileID: 1922691313}
-  - {fileID: 1705966310}
-  rig: {fileID: 1403997350}
+  mergeLevel: 0
+  rander: {fileID: 1403997348}
+  _Rigidbody: {fileID: 1403997350}
+  Force: 23
+  Force1: 4
+  moveSpeed: 5
+  moveSpeed1: 5
   StartTime: 3
   startFont: {fileID: 1547867190}
   scoreText: {fileID: 0}
-  shield: {fileID: 1782551046}
+  minPosition: {x: -15, y: -10, z: -15}
+  maxPosition: {x: 15, y: 100, z: 15}
+  originalPosition: {x: 0, y: 0, z: 0}
+  mu: 0
+  mu_time: 0
+  muspr: {fileID: 1782551046}
 --- !u!1 &1435116446
 GameObject:
   m_ObjectHideFlags: 0
