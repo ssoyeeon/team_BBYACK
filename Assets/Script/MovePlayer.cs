@@ -133,13 +133,17 @@ public class MovePlayer : MonoBehaviour
             case MushroomColor.yellow:
                 return MushroomColor.Green;
             case MushroomColor.Green:
+                return MushroomColor.SkyBlue;
+            case MushroomColor.SkyBlue:
                 return MushroomColor.Blue;
             case MushroomColor.Blue:
                 return MushroomColor.purple;
             case MushroomColor.purple:
                 return MushroomColor.pink;
             case MushroomColor.pink:
-                return MushroomColor.Orange;
+                return MushroomColor.dahong;
+            case MushroomColor.dahong:
+                return MushroomColor.darkwhite;
             default:
                 return MushroomColor.Orange;
         }
