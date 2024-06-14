@@ -7,7 +7,6 @@ public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject obstacleType001;
     [SerializeField] private GameObject obstacleType002;
-    //[SerializeField] private GameObject back;
 
     [SerializeField] public float minXPosition = -2f;
     [SerializeField] public float maxXPosition = 2f;
@@ -27,12 +26,6 @@ public class ObstacleSpawner : MonoBehaviour
         {
             temp = GameObject.Instantiate<GameObject>(obstacleType002);
         }
-
-        //if (num == 5 && player.transform.position.y >= 320)
-        //{
-        //        GameObject.Instantiate<GameObject>(back);
-        //}
-        
 
         temp.transform.position = new Vector3(Random.Range(maxXPosition, minXPosition), (int)player.transform.position.y + 12.0f, 0.0f);
         var obstacle = temp.GetComponent<Obstacle>();

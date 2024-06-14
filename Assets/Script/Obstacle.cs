@@ -8,7 +8,6 @@ public class Obstacle : MonoBehaviour
     public int ObstacleNum;
     public MovePlayer Player;
     public ObstacleSpawner spawner;
-    //public bool BI = true;
 
     void Update()
     {
@@ -17,10 +16,5 @@ public class Obstacle : MonoBehaviour
             spawner.SpawnObstacle(ObstacleNum);
             Destroy(gameObject);
         }
-        //if(Player.transform.position.y == 140 && BI == true)
-        //{
-        //    spawner.SpawnObstacle(ObstacleNum = 5);
-        //    BI = false;
-        //}
     }
 }
