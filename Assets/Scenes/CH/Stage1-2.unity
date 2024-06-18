@@ -4361,6 +4361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356786261}
   - component: {fileID: 356786260}
+  - component: {fileID: 356786262}
   m_Layer: 0
   m_Name: New Piskel (7)_1 (1)
   m_TagString: Untagged
@@ -4435,6 +4436,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &356786262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356786259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: 3
 --- !u!1 &359546434
 GameObject:
   m_ObjectHideFlags: 0
@@ -10697,6 +10712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1002206393}
   - component: {fileID: 1002206392}
+  - component: {fileID: 1002206394}
   m_Layer: 0
   m_Name: New Piskel (7)_2 (1)
   m_TagString: Untagged
@@ -10771,6 +10787,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1002206394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002206391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: 3
 --- !u!1 &1015136133
 GameObject:
   m_ObjectHideFlags: 0
@@ -12179,6 +12209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1154731885}
   - component: {fileID: 1154731884}
+  - component: {fileID: 1154731886}
   m_Layer: 0
   m_Name: New Piskel 2_12
   m_TagString: Untagged
@@ -12247,12 +12278,26 @@ Transform:
   m_GameObject: {fileID: 1154731883}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8703804, y: -2.9400096, z: -0.059347507}
+  m_LocalPosition: {x: 5.8703804, y: -6, z: -0.059347507}
   m_LocalScale: {x: 7.7101564, y: 6.9391403, z: 7.7101564}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154731886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154731883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 2
+  L: 10
 --- !u!1 &1155335188
 GameObject:
   m_ObjectHideFlags: 0
@@ -12617,6 +12662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1185458311}
   - component: {fileID: 1185458310}
+  - component: {fileID: 1185458312}
   m_Layer: 0
   m_Name: New Piskel (7)_1
   m_TagString: Untagged
@@ -12691,6 +12737,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185458312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185458309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: 10
 --- !u!1 &1186803396
 GameObject:
   m_ObjectHideFlags: 0
@@ -13877,6 +13937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1286129498}
   - component: {fileID: 1286129497}
+  - component: {fileID: 1286129499}
   m_Layer: 0
   m_Name: New Piskel (7)_0 (1)
   m_TagString: Untagged
@@ -13951,6 +14012,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1286129499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286129496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: 10
 --- !u!1 &1286190785
 GameObject:
   m_ObjectHideFlags: 0
@@ -14045,6 +14120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308397962}
   - component: {fileID: 1308397961}
+  - component: {fileID: 1308397963}
   m_Layer: 0
   m_Name: New Piskel (7)_0 (3)
   m_TagString: Untagged
@@ -14119,6 +14195,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308397963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308397960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: 3
 --- !u!1 &1313546551
 GameObject:
   m_ObjectHideFlags: 0
@@ -16265,6 +16355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526981134}
   - component: {fileID: 1526981133}
+  - component: {fileID: 1526981135}
   m_Layer: 0
   m_Name: New Piskel (7)_0 (2)
   m_TagString: Untagged
@@ -16339,6 +16430,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526981135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526981132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: -10
 --- !u!1 &1533757731
 GameObject:
   m_ObjectHideFlags: 0
@@ -16670,8 +16775,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -20560,6 +20665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926907959}
   - component: {fileID: 1926907958}
+  - component: {fileID: 1926907960}
   m_Layer: 0
   m_Name: New Piskel (7)_2
   m_TagString: Untagged
@@ -20634,6 +20740,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1533757732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1926907960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926907957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb42ba9cc75e10948ab99ed32e2925bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 1
+  L: 10
 --- !u!1 &1948408876
 GameObject:
   m_ObjectHideFlags: 0
