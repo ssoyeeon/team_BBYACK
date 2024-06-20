@@ -5803,7 +5803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336977837857681402, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_TagString
-      value: Muge
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2670665857623446211, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_IsActive
@@ -23382,7 +23382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336977837857681402, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_TagString
-      value: Muge
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2670665857623446211, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_IsActive

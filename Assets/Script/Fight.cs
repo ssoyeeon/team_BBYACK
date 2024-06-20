@@ -53,7 +53,7 @@ public class Fight : MonoBehaviour
         {
             _Rigidbody.velocity = Vector3.zero;
             this.transform.position = new Vector3(0.0f, 0.0f, -10.0f);
-            SceneManager.LoadScene("LeftWin");
+            SceneManager.LoadScene("RightWin");
         }
 
         if (gameObject == Clear)
