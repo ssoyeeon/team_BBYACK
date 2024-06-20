@@ -33,16 +33,16 @@ public class Fight : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.A))
             {
                 _Rigidbody.velocity = Vector3.zero;
-                _Rigidbody.AddForce(Vector3.up * 23, ForceMode.VelocityChange);
-                _Rigidbody.AddForce(Vector3.left * 4, ForceMode.Impulse);
+                _Rigidbody.AddForce(Vector3.up * 18, ForceMode.VelocityChange);
+                _Rigidbody.AddForce(Vector3.left * 3, ForceMode.Impulse);
             }
 
             //마우스 우클릭 시에 오른쪽 위로 올라감
             else if (Input.GetKeyDown(KeyCode.D))
             {
                     _Rigidbody.velocity = Vector3.zero;
-                    _Rigidbody.AddForce(Vector3.up * 23, ForceMode.VelocityChange);
-                    _Rigidbody.AddForce(Vector3.right * 4, ForceMode.Impulse);
+                    _Rigidbody.AddForce(Vector3.up * 18, ForceMode.VelocityChange);
+                    _Rigidbody.AddForce(Vector3.right * 3, ForceMode.Impulse);
             }
         }
     }
