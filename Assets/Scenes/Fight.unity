@@ -5054,7 +5054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7014cfd60edcce46838f9193be84a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Muge: {fileID: 186014671}
+  Muge: {fileID: 0}
   Clear: 0
 --- !u!65 &509101303
 BoxCollider:

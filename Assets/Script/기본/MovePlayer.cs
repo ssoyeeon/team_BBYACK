@@ -202,7 +202,6 @@ public class MovePlayer : MonoBehaviour
             mu_time = 1.5f;
 
             Destroy(collision.gameObject);
-
             // 합체 버섯과 충돌시 mergeLevel 카운트 변수의 값을 1증가시킴
             //mergeLevel = mergeLevel + 1;
             //mergeLevel += 1;
