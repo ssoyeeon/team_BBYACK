@@ -9,6 +9,8 @@ TagManager:
   - Clear
   - Muge
   - PoPo
+  - LeftPlayer
+  - RightPlayer
   layers:
   - Default
   - TransparentFX

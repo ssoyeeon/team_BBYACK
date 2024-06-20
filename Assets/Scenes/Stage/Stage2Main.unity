@@ -746,11 +746,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneList:
-  - 
-  - C.GameOverScene
-  - GameScene
-  - C.StartScene
-  - Stage2Main
   - Stage1-1
   - Stage1-2
   - Stage1-3
@@ -758,6 +753,7 @@ MonoBehaviour:
   - Stage1-5
   - Stage1-6
   - Stage1-7
+  - C.StartScene
   - 
   - 
   - 
@@ -767,6 +763,11 @@ MonoBehaviour:
   - 
   - 
   - 
+  - 
+  - 
+  - 
+  - 
+  buttonCanvas: {fileID: 0}
 --- !u!4 &586190489
 Transform:
   m_ObjectHideFlags: 0

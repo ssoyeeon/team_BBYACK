@@ -92,7 +92,7 @@ public class MovePlayer : MonoBehaviour
             startFont.text = "";
             _Rigidbody.useGravity = true;
 
-            if (canMove == true)
+            if (canMove == true && tag == "Player")
             {               
                 //마우스 좌클릭 시에 왼쪽 위로 올라감
                 if (Input.GetMouseButtonDown(0))

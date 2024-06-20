@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System;
 
 public class ButtonController : MonoBehaviour
 {
     public string[] SceneList = new string[20];
+    public GameObject buttonCanvas;
 
-    public void StageMain(int number)
+    
+     public void StageMain(int number)
     {
         SceneManager.LoadScene(SceneList[number]);
-    }
+    }  
 }
