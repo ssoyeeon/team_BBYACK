@@ -8,16 +8,26 @@ using UnityEngine.UIElements;
 
 public class ClearLine : MonoBehaviour
 {
-    public GameObject[] mergee;
+    private GameObject Mergee;
 
     public void OnCollisionEnter(Collision collision)
     {
-        Mushroom mushroomComponent = collision.gameObject.GetComponentInParent<Mushroom>();
-
-        if (collision.collider.tag == "Player" && mushroomComponent == null)
+        Mergee = GameObject.Find("Sphere");
+        if (Mergee == null)
         {
             Debug.Log("Ω««‡«‡");
             SceneManager.LoadScene("C.Clear");
+        }
+
+        
+
+        if (collision.gameObject.tag == "RightPlayer")
+        {
+            SceneManager.LoadScene("RightWin");
+        }
+        if (collision.gameObject.tag == "LeftPlayer")
+        {
+            SceneManager.LoadScene("LeftWin");
         }
     }
 }

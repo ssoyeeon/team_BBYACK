@@ -56,10 +56,5 @@ public class RightPlayer : MonoBehaviour
             SceneManager.LoadScene("LeftWin");
             this.transform.position = new Vector3(0.0f, 0.0f, -10.0f);
         }
-
-        if (gameObject == Clear)
-        {
-            SceneManager.LoadScene("RightWin");
-        }
     }
 }

@@ -8233,7 +8233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336977837857681402, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_TagString
-      value: Muge
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2670665857623446211, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_IsActive
@@ -23608,7 +23608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7014cfd60edcce46838f9193be84a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Muge: {fileID: 0}
 --- !u!65 &1188171897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23689,7 +23688,7 @@ Transform:
   m_GameObject: {fileID: 1188171895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3, y: 57, z: 0}
+  m_LocalPosition: {x: 5.3, y: 58.74, z: 0}
   m_LocalScale: {x: 70.93305, y: 0.22936, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27314,7 +27313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336977837857681402, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_TagString
-      value: Muge
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2670665857623446211, guid: d4b810c0d7783d34b8fb4ba03b2eba05, type: 3}
       propertyPath: m_IsActive
