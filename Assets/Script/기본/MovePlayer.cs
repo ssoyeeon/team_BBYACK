@@ -169,9 +169,19 @@ public class MovePlayer : MonoBehaviour
                 Debug.Log(collision.gameObject.name);
             });
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Score")
+        {
+            Destroy(other.gameObject);
+            score++;
+            scoreText.text = "Score: " + score;
+        }
 
         // 충돌한 게임 오브젝트가 플레이어 오브젝트의 자식 오브젝트인지 확인
-        Mushroom mushroomComponent = collision.gameObject.GetComponentInParent<Mushroom>();
+        Mushroom mushroomComponent = other.gameObject.GetComponentInParent<Mushroom>();
 
         if (mushroomComponent != null)
         {
@@ -196,12 +206,12 @@ public class MovePlayer : MonoBehaviour
         }
 
         //if (gameObject.tag == "Muge")
-        if (collision.gameObject.tag == "Muge")
+        if (other.gameObject.tag == "Muge")
         {
             mu = true;
             mu_time = 1.5f;
 
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
             // 합체 버섯과 충돌시 mergeLevel 카운트 변수의 값을 1증가시킴
             //mergeLevel = mergeLevel + 1;
             //mergeLevel += 1;
@@ -224,16 +234,6 @@ public class MovePlayer : MonoBehaviour
 
             }
 
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Score")
-        {
-            Destroy(other.gameObject);
-            score++;
-            scoreText.text = "Score: " + score;
         }
     }
 }
