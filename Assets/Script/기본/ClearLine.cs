@@ -8,26 +8,25 @@ using UnityEngine.UIElements;
 
 public class ClearLine : MonoBehaviour
 {
-    private GameObject Mergee;
+    private GameObject Mergee;      //Merge ¿ÀºêÁ§Æ®
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)      //´ê¾ÒÀ» ¶§
     {
-        Mergee = GameObject.Find("Sphere");
-        if (Mergee == null)
+        Mergee = GameObject.Find("Sphere");     //ÀÌ¸§ÀÌ SphereÀÓ.
+        if (Mergee == null)                     //¸ÓÁö°¡ null ÀÏ ¶§ Å¬¸®¾î ¾À ¶ç¿öÁà¿ä
         {
-            Debug.Log("½ÇÇàÇà");
             SceneManager.LoadScene("C.Clear");
         }
 
         
 
-        if (collision.gameObject.tag == "RightPlayer")
+        if (collision.gameObject.tag == "RightPlayer")      //RightPlayer°¡ ´ê¾Ò¾î¿ä!
         {
-            SceneManager.LoadScene("RightWin");
+            SceneManager.LoadScene("RightWin");             //RightWin¾À ¶ç¿ó´Ï´Ù.
         }
-        if (collision.gameObject.tag == "LeftPlayer")
+        if (collision.gameObject.tag == "LeftPlayer")       //leftPlayer°¡ ´ê¾Ò¾î¿ä!
         {
-            SceneManager.LoadScene("LeftWin");
+            SceneManager.LoadScene("LeftWin");              //leftWin¾À ¶ç¿ó´Ï´Ù.
         }
     }
 }
