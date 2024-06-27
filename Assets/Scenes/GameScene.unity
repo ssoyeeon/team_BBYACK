@@ -9176,7 +9176,7 @@ MonoBehaviour:
   mergeLevel: 0
   rander: {fileID: 796759714}
   _Rigidbody: {fileID: 796759717}
-  Force: 23
+  Force: 24
   Force1: 4
   moveSpeed: 0
   moveSpeed1: 5

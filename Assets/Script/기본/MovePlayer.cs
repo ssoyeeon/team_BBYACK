@@ -109,6 +109,11 @@ public class MovePlayer : MonoBehaviour
                     _Rigidbody.AddForce(Vector3.up * Force, ForceMode.VelocityChange);
                     _Rigidbody.AddForce(Vector3.right * Force1, ForceMode.Impulse);
                 }
+
+                if(Input.GetKeyDown(KeyCode.Escape))
+                {
+                    SceneManager.LoadScene("Set");
+                }
             }
 
             //x,y,z 써놓은 좌표 이상 나가면 재시작
