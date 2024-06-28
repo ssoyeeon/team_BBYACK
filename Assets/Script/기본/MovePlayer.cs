@@ -49,6 +49,8 @@ public class MovePlayer : MonoBehaviour
 
     public bool stoptime;           //멈출 때 일시정지 활성화 비활성화
 
+    public GameObject GameUI;      //일시정지 화면 때 띄울 UI
+
     //스타트 시작하기 전에 먼저 할게요~
     void Awake()
     {
@@ -116,6 +118,7 @@ public class MovePlayer : MonoBehaviour
                     {
                         stoptime = true;                    //true로 바꿔주구요
                         Time.timeScale = 0f;                //timeScale을 0으로 해서 일시정지 시켜줍니다
+                        GameUI.SetActive(true);             //UI 켜
                         return;                             //리턴~
                     }
 
@@ -123,6 +126,7 @@ public class MovePlayer : MonoBehaviour
                     {
                         Time.timeScale = 1f;                //timeScale을 1로 만들어서 재생 시켜주구요
                         stoptime = false;                   //false로 바꿔줍니다
+                        GameUI.SetActive(false);            //UI 꺼
                         return;                             //리턴~~
                     }
                 }
