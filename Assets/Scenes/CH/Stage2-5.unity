@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 2
 --- !u!212 &2749674
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6682,7 +6682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 5
 --- !u!212 &401941432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7795,7 +7795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 4
 --- !u!212 &459371112
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10952,7 +10952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 1
 --- !u!212 &667649598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26830,7 +26830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 6
 --- !u!212 &1736683615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28855,7 +28855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a17f3215cdaed46a800bd7ed85a762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: 0
+  Color: 3
 --- !u!212 &1894041933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31712,8 +31712,6 @@ MonoBehaviour:
   _Rigidbody: {fileID: 2038383190}
   Force: 23
   Force1: 4
-  moveSpeed: 0
-  moveSpeed1: 5
   StartTime: 3
   startFont: {fileID: 2055302931}
   scoreText: {fileID: 0}
@@ -31723,6 +31721,7 @@ MonoBehaviour:
   mu: 0
   mu_time: 0
   muspr: {fileID: 1030554574}
+  stoptime: 0
 --- !u!65 &2038383192
 BoxCollider:
   m_ObjectHideFlags: 0

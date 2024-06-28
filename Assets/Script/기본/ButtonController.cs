@@ -14,9 +14,4 @@ public class ButtonController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneList[number]);  //리스트에 쓴 이름의 씬을 가져옵니다.
     }
-
-    public void GameSet(int num)        //숫자로 가져와요
-    {
-        Application.Quit();             //게임 종료~!
-    }
 }
