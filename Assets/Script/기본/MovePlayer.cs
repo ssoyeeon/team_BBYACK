@@ -66,6 +66,7 @@ public class MovePlayer : MonoBehaviour
         _Rigidbody.useGravity = false;          //아직 시작 안 했읍니다. 그래비티 false 해놓을게요~
         muspr.SetActive(false);                 //방어막도 일단 fasle
         stoptime = false;                       //일시정지는 당연하게도 비활성화 해놓습니다.
+        GameUI.SetActive(false);                //UI 꺼놔야죠~
     }
 
     void Update()

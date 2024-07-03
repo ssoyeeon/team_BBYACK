@@ -10,8 +10,6 @@ public class ScoreManager : MonoBehaviour
     private int score;
     private int bestScore;
 
-    public GameObject gameOver;
-
     // Start is called before the first frame update
     void Start()
     {

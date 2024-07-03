@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class Set : MonoBehaviour
 {
-    public Button[] buttons;
+    public int num;
 
-    void Bu(int num)
+    public void Update()
     {
         if (num == 1)
         {
