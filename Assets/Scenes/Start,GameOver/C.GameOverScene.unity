@@ -753,8 +753,8 @@ RectTransform:
   m_Children:
   - {fileID: 1883662023}
   - {fileID: 525908041}
-  - {fileID: 1384006203}
   - {fileID: 479299254}
+  - {fileID: 1384006203}
   - {fileID: 412032849}
   - {fileID: 468828180}
   m_Father: {fileID: 0}
