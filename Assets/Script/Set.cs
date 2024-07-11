@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Set : MonoBehaviour
 {
-    public int num;
-
+    public enum Setting
+    {
+        GameOut,
+        ReStart,
+       Home
+    }
     public void Update()
     {
-        if (num == 1)
-        {
-            Application.Quit();
-        }
+        if(Input.GetMouseButtonDown(0))
+        Application.Quit();
 
-        if(num == 2)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        Scene scene = SceneManager.GetActiveScene();
+        Debug.Log(scene.name);
+        SceneManager.LoadScene(scene.name); 
     }
 }
