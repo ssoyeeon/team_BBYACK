@@ -1,16 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SGLT : MonoBehaviour
 {
-    void Start()
+    public void SGGT()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        SceneManager.LoadScene("SGLT");
     }
 }

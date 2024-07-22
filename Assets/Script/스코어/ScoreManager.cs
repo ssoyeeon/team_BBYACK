@@ -26,5 +26,5 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetInt("BestScore", bestScore);
             score_Text.text = "Best Score: " + bestScore.ToString();
         }
-    }
+    } 
 }
