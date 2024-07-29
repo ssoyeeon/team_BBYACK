@@ -32,9 +32,6 @@ public class MovePlayer : MonoBehaviour
     public TMP_Text scoreText;              //스코어
     private int score = 0;                  //스코어 점수 시작 0 점
 
-    public float SGLTTime = 5;                  //시간
-    public GameObject SGLT;
-
     public int Score => score;                  //Score를 score로 저장할게염~
 
     //최대 이동 거리
@@ -70,15 +67,12 @@ public class MovePlayer : MonoBehaviour
         muspr.SetActive(false);                 //방어막도 일단 fasle
         stoptime = false;                       //일시정지는 당연하게도 비활성화 해놓습니다.
         GameUI.SetActive(false);                //UI 꺼놔야죠~
-        SGLT.SetActive(false);
     }
 
     void Update()
     {     
         StartTime -= Time.deltaTime;                    //모든 컴퓨터에서 똑같게 Time.deltaTime을 씁니당당
         startFont.text = StartTime.ToString("F0");      //스타트에 넣어줘요~
-
-        SGLTTime -= Time.deltaTime;
 
         mu_time -= Time.deltaTime;                      //모든 컴퓨터에서 똑같게 Time.deltaTime을 써요~
         if (mu_time <= 0)                               //무적 시간이 끝나면 
@@ -92,11 +86,6 @@ public class MovePlayer : MonoBehaviour
             muspr.SetActive(true);                      //방어막 스프라이트 활성화
         }
 
-        if(SGLTTime <= 0)
-        {
-            SGLTTime = 0;
-            SGLT.SetActive(true);
-        }
         //스타트 타임
         if (StartTime <= 0)                             //스타트 타임이 0과 같거나 작으면
         {
