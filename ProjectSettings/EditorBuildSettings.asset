@@ -77,7 +77,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage/Stage1Main.unity
     guid: 95865f0c9297d9b4086b2ff654b6e356
-  - enabled: 1
-    path: Assets/Scenes/SGLT.unity
-    guid: d347d86e2f9da4a46a160589dc2ae2c5
   m_configObjects: {}
