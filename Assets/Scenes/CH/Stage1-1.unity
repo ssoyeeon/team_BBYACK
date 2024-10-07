@@ -25684,7 +25684,7 @@ MonoBehaviour:
   mu_time: 2
   muspr: {fileID: 15389616}
   stoptime: 0
-  GameUI: {fileID: 0}
+  GameUI: {fileID: 809618851}
 --- !u!1 &1263140579
 GameObject:
   m_ObjectHideFlags: 0

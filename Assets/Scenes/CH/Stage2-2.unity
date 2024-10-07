@@ -2679,7 +2679,7 @@ MonoBehaviour:
   mu_time: 0
   muspr: {fileID: 609181625}
   stoptime: 0
-  GameUI: {fileID: 0}
+  GameUI: {fileID: 489387036}
 --- !u!65 &211991939
 BoxCollider:
   m_ObjectHideFlags: 0
